@@ -1,0 +1,171 @@
+\documentclass[12pt, letterpaper]{article}
+
+% ------------------------------------------------------------------------------
+% -- MERGED PACKAGES FROM OLD PROJECT & NEW PROJECT
+% ------------------------------------------------------------------------------
+
+% OLD geometry settings (you can adjust these if you like the older margins)
+\usepackage[
+    ignoreheadfoot, 
+    top=1.26cm,
+    bottom=2cm,
+    left=2.54cm,
+    right=2.54cm,
+    footskip=1.0cm,
+]{geometry}
+
+% For Czech support and font loading via XeLaTeX or LuaLaTeX:
+\usepackage[czech]{babel}
+\usepackage{fontspec}  % if you compile via XeLaTeX or LuaLaTeX
+\setmainfont{Source Serif Pro}  % or any font you prefer
+
+% Additional packages from old project:
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdfauthor={John Doe},
+    pdftitle={Cover Letter},  % or your document title
+    colorlinks=true,
+    urlcolor=black % or your color of choice
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+% If you wish to preserve the original machine-readable hints from the old CV:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% From old project’s chosen text font (Charter), 
+% comment out if you prefer the new main font:
+% \usepackage{charter}
+
+% Some raggedright settings from old:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} 
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+% Titles:
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3cm}{0.2cm}
+
+% Custom item bullet:
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+% Define highlight environments from old:
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+}
+
+% One-column, two-column, three-column environment from old:
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0cm+0.00001cm}{0cm+0.00001cm}
+}{
+    \end{adjustwidth}
+}
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5cm}
+    \begin{paracol}{2}
+    % Make the left column use a custom size (e.g. 11.5pt on 13pt leading):
+    \fontsize{13pt}{13pt}\selectfont
+}{
+    \switchcolumn
+    % Make the right column the same custom size:
+    \fontsize{13pt}{13pt}\selectfont
+    \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+% For the shading color:
+\definecolor{gr}{RGB}{225,225,225}
+
+% Load your personal info from info.tex (same as old or new project):
+\input{info}
+
+% ------------------------------------------------------------------------------
+% -- BEGIN DOCUMENT
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% Shaded header banner from new project:
+\AddToShipoutPictureBG{%
+    \color{gr}
+    \AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header (similar to new project’s)
+\begin{center}
+    {\fontsize{28}{0}\selectfont\scshape \myname}
+
+    \vspace{0.12in}
+    
+    \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+    \href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace linkedin.com/in/\mylinkedin}\hfill
+    \href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+    \faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+\input{body}
+
+\end{document}
