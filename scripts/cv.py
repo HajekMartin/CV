@@ -62,11 +62,15 @@ def pdf_location(branch):
 
 
 def new_application(args):
-    brief = Path(args.brief_file).expanduser().read_text(encoding="utf-8")
-    if not brief.strip() or not args.company.strip() or not args.position.strip():
-        raise ValueError("Firma, pozice i zadání musí být vyplněné.")
+    if not args.company.strip() or not args.position.strip():
+        raise ValueError("Firma a pozice musí být vyplněné.")
     if any(char in args.company + args.position for char in "\r\n"):
         raise ValueError("Firma a pozice musí být na jednom řádku.")
+    job_url = args.job_url.strip()
+    if job_url:
+        parts = urlsplit(job_url)
+        if parts.scheme not in ("http", "https") or not parts.hostname or any(char.isspace() or char in "<>" for char in job_url):
+            raise ValueError("Odkaz na inzerát musí být platná HTTP nebo HTTPS adresa.")
     if git("status", "--porcelain"):
         raise ValueError("Pracovní strom není čistý. Nejprve ulož rozpracované změny.")
     git("rev-parse", "--verify", "refs/heads/main")
@@ -82,11 +86,12 @@ def new_application(args):
     template = Template(git("show", "main:templates/application-readme.md"))
     readme = template.substitute(
         company=args.company, position=args.position, branch=branch,
-        language=args.language, brief=brief.rstrip("\n"),
+        language={"cs": "Čeština", "en": "Angličtina", "de": "Němčina"}[args.language],
+        job_section=f"## Pracovní nabídka\n\n[Odkaz na inzerát](<{job_url}>)" if job_url else "",
     )
     metadata = {
         "company": args.company, "position": args.position,
-        "branch": branch, "language": args.language,
+        "branch": branch, "language": args.language, "job_url": job_url or None,
     }
     git("switch", "-c", branch, "main")
     (ROOT / "README.md").write_text(readme + "\n", encoding="utf-8")
@@ -94,7 +99,7 @@ def new_application(args):
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     (ROOT / "output" / "CV-Martin-Hajek-main.pdf").unlink(missing_ok=True)
-    print(f"Vytvořena větev {branch}; zadání je v README.md.")
+    print(f"Vytvořena větev {branch}; údaje o pozici jsou v README.md.")
     print("Přizpůsob body.tex a spusť: python3 scripts/cv.py build")
 
 
@@ -205,7 +210,7 @@ def main():
     new = commands.add_parser("new", help="Založit novou přihlášku z main")
     new.add_argument("--company", required=True)
     new.add_argument("--position", required=True)
-    new.add_argument("--brief-file", required=True)
+    new.add_argument("--job-url", default="", help="Veřejný odkaz na pracovní nabídku (volitelný)")
     new.add_argument("--language", choices=LANGUAGES, default="cs")
     new.set_defaults(action=new_application)
     compile_cv = commands.add_parser("build", help="Zkompilovat PDF aktuální větve")
