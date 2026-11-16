@@ -1,0 +1,76 @@
+{
+  "version": "2.0.0",
+  "options": { "cwd": "${workspaceFolder}" },
+  "presentation": { "reveal": "always", "panel": "shared", "clear": true },
+  "tasks": [
+    {
+      "label": "CV: Sestavit a otevřít PDF",
+      "detail": "Zkompiluje aktuální větev a po úspěchu otevře výsledné PDF.",
+      "type": "process",
+      "command": "python3",
+      "windows": { "command": "python" },
+      "args": ["${workspaceFolder}/scripts/cv.py", "build", "--open"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "CV: Pouze sestavit PDF",
+      "detail": "Uloží nové PDF do output/ bez otevření prohlížeče.",
+      "type": "process",
+      "command": "python3",
+      "windows": { "command": "python" },
+      "args": ["${workspaceFolder}/scripts/cv.py", "build"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "CV: Otevřít poslední PDF",
+      "detail": "Otevře existující PDF aktuální větve bez nové kompilace.",
+      "type": "process",
+      "command": "python3",
+      "windows": { "command": "python" },
+      "args": ["${workspaceFolder}/scripts/cv.py", "open"],
+      "problemMatcher": []
+    },
+    {
+      "label": "CV: Nová přihláška",
+      "detail": "Zeptá se na firmu, pozici, zadání a jazyk; vytvoří větev a README z main.",
+      "type": "process",
+      "command": "python3",
+      "windows": { "command": "python" },
+      "args": [
+        "${workspaceFolder}/scripts/cv.py", "new",
+        "--company", "${input:cvCompany}",
+        "--position", "${input:cvPosition}",
+        "--brief-file", "${input:cvBriefFile}",
+        "--language", "${input:cvLanguage}"
+      ],
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "cvCompany",
+      "type": "promptString",
+      "description": "Název firmy (například Škoda Auto)"
+    },
+    {
+      "id": "cvPosition",
+      "type": "promptString",
+      "description": "Název pozice, na kterou se hlásíš"
+    },
+    {
+      "id": "cvBriefFile",
+      "type": "promptString",
+      "description": "Cesta k uloženému textovému zadání (relativně ke kořeni projektu nebo absolutně)",
+      "default": ".local/zadani.txt"
+    },
+    {
+      "id": "cvLanguage",
+      "type": "pickString",
+      "description": "Jazyk CV: cs = čeština, en = angličtina, de = němčina",
+      "options": ["cs", "en", "de"],
+      "default": "cs"
+    }
+  ]
+}

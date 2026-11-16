@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    ".build": true,
+    ".cache": true,
+    ".tools": true,
+    "**/__pycache__": true
+  },
+  "search.exclude": {
+    ".build/**": true,
+    ".cache/**": true,
+    ".tools/**": true
+  }
+}
