@@ -70,6 +70,16 @@ Počítají se původní dotazníkové položky, nikoli každá jednotlivá tech
 
 Profesní použití jednotlivých technologií uvádět pouze tam, kde je podložené konkrétní rolí nebo projektem. U ostatních je potvrzena znalost, nikoli pracovní praxe.
 
+### Upřesnění Pythonu, Javy a AI projektů — 2026-11-16
+
+**Zdroj:** přímá odpověď uživatele při přípravě přihlášky do Air Bank.
+
+- **Java:** pouze školní projekty. Neuvádět ji jako doloženou pracovní praxi.
+- **Python:** školní projekty a AI projekty v rámci AI kurzů. Délka používání, jména kurzů, certifikace ani profesionální praxe nebyly potvrzeny.
+- Uživatel nemá konkrétní samostatný AI/LLM projekt k popisu v CV. Nevytvářet projektovou položku, implementační příběh ani výsledky bez dalších podkladů.
+- AI uvádět především jako znalost rámců a konceptů již zaznamenaných v profilu: LLM API, prompt engineering, MCP, LangChain, LangGraph, smolagents a obecné principy AI agentů. Smolagents uživatel znovu výslovně zmínil; přesnou individuální úroveň neurčil.
+- Požadavek inzerátu na dva roky zkušeností s Javou nebo Pythonem nelze z těchto údajů prezentovat jako splněný. Původní hodnocení YES se nemění; upřesnil se kontext použití.
+
 ## Základní znalosti — BASICS, 7 z 50 položek
 
 - C++
@@ -101,6 +111,7 @@ Potvrzený rozsah vhodný pro profesní profil:
 - Znalost MCP (Model Context Protocol) serverů a konceptu jejich využití pro propojení LLM s nástroji a datovými zdroji. Vlastní implementace nebo provoz konkrétního MCP serveru zatím nejsou doloženy.
 - Obecná znalost konceptů návrhu a tvorby AI agentů a skládání AI řešení. Rozsah znalosti jednotlivých frameworků nebyl samostatně určen; smolagents zůstává součástí společně potvrzené položky.
 - LangChain a LangGraph jako uživatelem doplněné AI znalosti, bez samostatně určené úrovně nebo doloženého pracovního projektu.
+- Python byl použit ve školních projektech a AI projektech v rámci kurzů. Konkrétní samostatný AI/LLM projekt k popsání v CV uživatel při přihlášce do Air Bank neuvedl.
 - Akademický kontext: bakalářská práce s neuronovými sítěmi a diplomová práce zaměřená na predikci a využití výroby FVE. Z názvů prací neodvozovat konkrétní knihovny, modely, metody, kvalitu predikce ani nasazení v produkci.
 
 Použitelná formulace pro české CV, pokud odpovídá cílové nabídce:
@@ -131,7 +142,7 @@ Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní prod
 
 ## Otevřené otázky pro budoucí upřesnění
 
-- Oddělit pracovní, osobní a studijní použití nově potvrzených technologií, například Java, Python, Vue.js, Next.js, PostgreSQL, MongoDB a DynamoDB.
+- Oddělit pracovní, osobní a studijní použití dalších potvrzených technologií, například Vue.js, Next.js, PostgreSQL, MongoDB a DynamoDB. Kontext Javy a Pythonu byl upřesněn 2026-11-16 výše.
 - Doložit konkrétní projekty, délku používání a odpovědnost u klíčových technologií, až to bude relevantní pro cílovou nabídku.
 - Pokud budoucí podklady změní chronologii, porovnat je s pokynem uživatele z 2026-11-16; současné zaměstnání KAMAX je k tomuto dni potvrzené.
 - Rozlišit jednotlivé úrovně Azure AI a AWS Bedrock a případně dalších společně hodnocených frameworků.

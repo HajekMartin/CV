@@ -25,6 +25,7 @@ Pro konkrétní firmu vyber a seřaď relevantní zkušenosti z hlavního CV a p
 ## Úroveň a přesnost tvrzení
 
 - YES potvrzuje znalost nebo používání, nikoli automaticky profesionální praxi, senioritu, počet let nebo dokončený projekt.
+- Java je doložená pouze ve školních projektech; Python ve školních projektech a AI kurzech podle přímého upřesnění 2026-11-16. Neuváděj u nich pracovní praxi ani dobu používání bez dalšího potvrzení. Uživatel nemá konkrétní samostatný AI/LLM projekt k popsání v CV; AI prezentuj pomocí potvrzených frameworků, MCP a konceptů, ne vymyšleným projektem.
 - BASICS vždy označ jako základní znalost. NO neuváděj jako dovednost. Zachovej společně hodnocené skupiny; neodvozuj zvláštní úroveň každé dílčí technologie.
 - Aktuální zaměstnání KAMAX uživatel potvrdil 2026-11-16 a odkázal na chronologii profilu: 06/2022–08/2024 a 01/2025–dosud, ioLabs 09/2024–11/2024. Období KAMAX neslučuj do nepřetržitého zaměstnání.
 - Koordinace sprintů není důkazem formální role Scrum Master, Product Owner či Project Manager. Koordinace zavádění Ignition nedokládá jeho programování, administraci ani architektonickou odpovědnost.
