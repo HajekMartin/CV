@@ -1,6 +1,6 @@
 ---
 name: cv-tailor
-description: Udržuje komplexní hlavní CV a profesní profil Martina Hájka a připravuje z nich specializované životopisy, motivační dopisy a medailonky pro konkrétní firmy. Použij pro jeho profesní podklady, výběr doložených zkušeností a odevzdání zkompilované verze v tomto repozitáři.
+description: Udržuje komplexní hlavní CV a profesní profil Martina Hájka a připravuje z nich specializované životopisy, průvodní a motivační dopisy (cover letter) a medailonky pro konkrétní firmy. Použij pro jeho profesní podklady, výběr doložených zkušeností a odevzdání výstupů v tomto repozitáři.
 ---
 
 # CV Tailor — Martin Hájek
@@ -31,6 +31,29 @@ Pro konkrétní firmu vyber a seřaď relevantní zkušenosti z hlavního CV a p
 - Koordinace sprintů není důkazem formální role Scrum Master, Product Owner či Project Manager. Koordinace zavádění Ignition nedokládá jeho programování, administraci ani architektonickou odpovědnost.
 - Znalosti AI a akademické práce nedokládají komerční AI projekt nebo produkční nasazení. AWS, Azure a společná položka Azure AI/AWS Bedrock zůstávají BASICS.
 - Nepřidávej výsledkové metriky, certifikace, absolvovaná školení ani rozsah odpovědnosti bez podkladu. Pokud je cílový výstup potřebuje, upřesni konkrétní chybějící údaj s uživatelem a pokračuj v podložených částech.
+
+## Cover letter na požádání
+
+Dopis vytvářej na výslovné požádání, samostatně nebo spolu s CV. Před psaním zjisti dvě volby: **délku** a **styl**. Pokud některá chybí, zeptej se na ni; obě chybějící volby nabídni současně a před vytvořením dopisu vyčkej na odpověď. Volbu uvedenou už v aktuálním zadání znovu nepotvrzuj. Zadání „úplně krátký, věcný cover letter“ tedy další otázku nepotřebuje. Tyto volby platí pro daný dopis, nikoli automaticky pro další přihlášky.
+
+| Délka | Rozsah |
+| --- | --- |
+| Úplně krátká | Nejvýše 5 vět těla dopisu; stručné a přirozeně dlouhé věty. Oslovení, podpis a závěrečný LinkedIn se do limitu nepočítají. |
+| Střední | Přibližně 150–220 slov těla dopisu ve 3–4 krátkých odstavcích. |
+
+Jiný výslovně zadaný limit má přednost.
+
+| Styl | Důraz |
+| --- | --- |
+| Motivační | Proč mě zajímá daná role a její zaměření, kam se chci profesně posunout a čím mohu přispět. Motivaci opři o uživatelem uvedené zájmy a doložené zaměření pozice. |
+| Věcný | Konkrétní požadavky nabídky spoj s relevantními, doloženými zkušenostmi a jejich přínosem pro práci. |
+| Kombinovaný | Krátká konkrétní motivace a několik nejrelevantnějších zkušeností. Nabídni jako doporučenou vyváženou variantu. |
+
+Firmu, pozici a kontext načti z aktuální přihlášky; jazyk přebírej z `application.json`, pokud uživatel nepožádá o jiný. Pro každou délku i styl platí stejná pravidla důkazů jako pro CV. Nezaměňuj zájem o oblast nebo znalost frameworku za pracovní zkušenost. U motivačního stylu nevymýšlej osobní příběh, dlouhodobý vztah k firmě ani její kulturu. Věcný styl může být plynulý text; nemusí mít podobu seznamu.
+
+Na úplný konec **každého** dopisu, za podpis, vždy přidej samostatný řádek `LinkedIn: https://www.linkedin.com/in/<mylinkedin>/`. Hodnotu `mylinkedin` načti z `info.tex`; aktuálně odpovídá profilu `hajek-martin`. V souboru zachovej úplnou URL, v chatu může být klikací. Za tento řádek už nepatří další obsah dopisu.
+
+Hotový text předlož v chatu ke snadnému zkopírování a ulož ve větvi dané přihlášky jako `output/Cover-Letter-Martin-Hajek-<větev>.txt`. PDF připrav, pokud jej uživatel požaduje. Dopis ani volby a odpovědi z chatu nekopíruj do README. Před odevzdáním ověř rozsah, styl, doloženost tvrzení, jazyk a závěrečný LinkedIn. Tato pravidla uživatel doplnil 2026-11-16.
 
 ## Větev a popis pozice
 
