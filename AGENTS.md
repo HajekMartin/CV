@@ -14,6 +14,7 @@ Tento repozitář obsahuje LaTeXový životopis a podklady pro jeho přizpůsobe
 ## Profil a lokální skill
 
 - Před psaním nebo obsahovou úpravou CV, motivačního dopisu či profesního medailonku přečti [skill cv-tailor](skills/cv-tailor/SKILL.md).
+- Pro cover letter na požádání dodržuj postup v části [Cover letter na požádání](skills/cv-tailor/SKILL.md#cover-letter-na-požádání): volba délky a stylu před psaním, závěrečný LinkedIn a uložení ve větvi přihlášky.
 - Zdrojem profesních údajů je [profesní profil](skills/cv-tailor/references/professional-profile.md). Obsahuje zkušenosti, úrovně znalostí, zaměření na AI a dosud nevyjasněné údaje.
 - Nová výslovná potvrzení uživatele mají přednost před staršími podklady. Při aktualizaci profilu uveď datum a původ doplnění; rozlišuj potvrzené informace a otevřené otázky.
 - Potvrzená znalost technologie sama o sobě nedokládá její použití v zaměstnání, délku praxe ani expertní úroveň. Úroveň BASICS zachovej jako základní znalost; položky NO neuváděj mezi dovednostmi.
