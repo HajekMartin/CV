@@ -1,0 +1,13 @@
+Dear Adastra team,
+
+I am applying for the AI Product Engineer – AI Applications & Platforms role. I bring over three years of software development experience, primarily in C#/.NET, building internal applications and enterprise integrations.
+
+At KAMAX, my work spans requirements analysis, development and deployment with Docker and GitLab CI/CD. I also collaborate with international teams and coordinate software deliveries with an external supplier.
+
+I would like to apply this engineering background to AI products. My knowledge includes LLM APIs, MCP and agent frameworks such as LangChain, LangGraph and smolagents. I have also used Python in academic projects and AI courses. Your focus on turning AI solutions into practical applications aligns with the direction I want to grow in.
+
+I would welcome the opportunity to discuss how I could contribute to your team.
+
+Kind regards,
+Martin Hájek
+LinkedIn: https://www.linkedin.com/in/hajek-martin/
