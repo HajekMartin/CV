@@ -20,7 +20,7 @@ Pro konkrétní firmu vyber a seřaď relevantní zkušenosti z hlavního CV a p
 - **Mezinárodní projekty:** spolupráce s vývojovými týmy a německými závody, pracovní komunikace v angličtině, v některých případech vedení projektu.
 - **Koordinace dodavatele v KAMAX:** komunikace s externím partnerem, kontrola postupu a řešení otevřených bodů v týdenních sprintech. Konkrétní kontext je zavádění MES na platformě Ignition; podle nabídky lze zdůraznit platformu, nebo obecnější koordinaci dodávky softwaru.
 - **AI:** zájem o AI, LLM API a prompt engineering, propojování LLM s aplikacemi a nástroji, MCP servery a obecné principy návrhu AI agentů. AI agents/MCP/smolagents je společně hodnocená položka. LangChain a LangGraph uživatel nově uvedl mezi AI znalostmi 2026-11-16, bez samostatného hodnocení hloubky nebo pracovního použití. Akademický kontext tvoří neuronové sítě v bakalářské práci a predikce výroby FVE v diplomové práci.
-- **Vzdělání a jazyky:** Aplikovaná informatika na TUL, Ing. s vyznamenáním; čeština rodilá, angličtina B1/B2 s pracovní komunikací. Úroveň němčiny ani oficiální jazyková certifikace potvrzené nejsou.
+- **Vzdělání a jazyky:** Aplikovaná informatika na TUL, Ing. s vyznamenáním; čeština rodilá, angličtina B2 s pracovní komunikací. Uživatel B2 výslovně potvrdil 2026-11-16 jako vlastní hodnocení. Úroveň němčiny ani oficiální jazyková certifikace potvrzené nejsou.
 
 ## Úroveň a přesnost tvrzení
 

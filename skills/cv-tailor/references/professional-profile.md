@@ -137,7 +137,7 @@ Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní prod
 ## Jazyky
 
 - **Čeština:** rodilý mluvčí.
-- **Angličtina:** historické CV uvádí B1/B2; doložena je aktivní pracovní komunikace s mezinárodními a německými týmy. Oficiální test ani certifikát nebyl uveden.
+- **Angličtina:** B2, vlastní hodnocení výslovně potvrzené uživatelem 2026-11-16. Doložena je aktivní pracovní komunikace s mezinárodními a německými týmy. Starší CV uváděla B1/B2; pro nové výstupy použít aktuální B2. Oficiální test ani certifikát nebyl uveden.
 - **Němčina:** úroveň nepotvrzena. Práce s německými týmy nebo požadavek na německé znění CV nedokládají znalost němčiny.
 
 ## Otevřené otázky pro budoucí upřesnění
