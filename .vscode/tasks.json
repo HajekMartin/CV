@@ -34,7 +34,7 @@
     },
     {
       "label": "CV: Nová přihláška",
-      "detail": "Zeptá se na firmu, pozici, zadání a jazyk; vytvoří větev a README z main.",
+      "detail": "Zeptá se na firmu, pozici, odkaz na nabídku a jazyk; vytvoří větev a README z main.",
       "type": "process",
       "command": "python3",
       "windows": { "command": "python" },
@@ -42,7 +42,7 @@
         "${workspaceFolder}/scripts/cv.py", "new",
         "--company", "${input:cvCompany}",
         "--position", "${input:cvPosition}",
-        "--brief-file", "${input:cvBriefFile}",
+        "--job-url", "${input:cvJobUrl}",
         "--language", "${input:cvLanguage}"
       ],
       "problemMatcher": []
@@ -60,10 +60,10 @@
       "description": "Název pozice, na kterou se hlásíš"
     },
     {
-      "id": "cvBriefFile",
+      "id": "cvJobUrl",
       "type": "promptString",
-      "description": "Cesta k uloženému textovému zadání (relativně ke kořeni projektu nebo absolutně)",
-      "default": ".local/zadani.txt"
+      "description": "Veřejný odkaz na pracovní nabídku (volitelný)",
+      "default": ""
     },
     {
       "id": "cvLanguage",

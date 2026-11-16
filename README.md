@@ -1,6 +1,6 @@
 # CV — Martin Hájek
 
-Větev `main` obsahuje komplexní hlavní CV a společnou LaTeXovou šablonu. Zahrnuje pracovní zkušenosti, mezinárodní projekty a koordinaci dodavatele, vzdělání, potvrzené technologie a AI zaměření. Každá nová přihláška vzniká jako specializovaná verze v samostatné větvi podle firmy, se zadáním v jejím `README.md` a výsledným PDF ve složce `output/`.
+Větev `main` obsahuje komplexní hlavní CV a společnou LaTeXovou šablonu. Zahrnuje pracovní zkušenosti, mezinárodní projekty a koordinaci dodavatele, vzdělání, potvrzené technologie a AI zaměření. Každá nová přihláška vzniká jako specializovaná verze v samostatné větvi podle firmy, s popisem pozice v jejím `README.md` a výsledným PDF ve složce `output/`.
 
 CV používá dvoustránkovou sazbu s tmavě modrou hlavičkou, tyrkysovými akcenty a světlými modrými podklady znalostí. Větší portrét vpravo má obdélníkový formát na výšku, menší přiblížení a prostor kolem hlavy a ramen. Ořez po stranách je součástí LaTeXu, původní obrázek zůstává zachovaný. Technologie, AI a základní znalosti tvoří jeden přehled „Technické znalosti“, uspořádaný do textových řádků podle oblastí, bez technologických ikon a svislých oddělovačů. Základní úroveň je označená přímo u příslušných technologií. AI zahrnuje LLM API, prompt engineering, MCP, LangChain, LangGraph a koncepty AI agentů. Obecné sportovní zájmy se do výchozího CV nezařazují. Kontakty zahrnují osobní GitHub; samostatný odkaz v patičce vede na repozitář v příslušné větvi.
 
@@ -19,22 +19,22 @@ Přes **Terminal → Run Task…** jsou dostupné tyto volby:
 | **CV: Sestavit a otevřít PDF** | Kompilace a otevření právě vytvořeného PDF |
 | **CV: Pouze sestavit PDF** | Kompilace do `output/` |
 | **CV: Otevřít poslední PDF** | Otevření uloženého PDF aktuální větve bez kompilace |
-| **CV: Nová přihláška** | Formulář pro firmu, pozici, cestu k zadání a jazyk; poté založení větve a README |
+| **CV: Nová přihláška** | Formulář pro firmu, pozici, odkaz na nabídku a jazyk; poté založení větve a README |
 
-Pro novou přihlášku vytvoř v Exploreru složku `.local` a soubor `.local/zadani.txt`, vlož celé zadání a soubor ulož. Tato složka je vynechaná z Gitu, takže příprava zadání neblokuje přepnutí větve. Ostatní rozpracované změny nejprve ulož do commitu přes panel **Source Control**; šablona musí být uložená na `main`. Pak spusť **CV: Nová přihláška** a vyplň vstupy. Přihláška se založí z `main`; po přizpůsobení `body.tex` ji sestavíš stejnou klávesovou zkratkou.
+Spusť **CV: Nová přihláška**, vyplň firmu, pozici, jazyk a případně veřejný odkaz na nabídku. Ostatní rozpracované změny nejprve ulož do commitu přes panel **Source Control**; šablona musí být uložená na `main`. README nové větve obsahuje jen veřejný popis pozice, základní údaje a odkaz na CV. Osobní pokyny a citace z chatu se do něj nepřenášejí. Po přizpůsobení `body.tex` sestavíš přihlášku stejnou klávesovou zkratkou.
 
 Z terminálu lze stejné otevření spustit pomocí `python3 scripts/cv.py build --open`, případně `python3 scripts/cv.py open` pro již uložené PDF.
 
 ## Postup při novém zadání
 
 1. Vycházet z aktuální větve `main`. Rozpracovanou práci nejprve uložit, aby bylo možné bezpečně přepnout větev.
-2. Uložit celé uživatelovo zadání nebo text nabídky do dočasného textového souboru a založit přihlášku:
+2. Založit přihlášku podle firmy a pozice, případně přidat veřejný odkaz na nabídku:
 
    ```sh
-   python3 scripts/cv.py new --company "Škoda Auto" --position "Software Engineer" --brief-file /tmp/zadani.txt
+   python3 scripts/cv.py new --company "Škoda Auto" --position "Software Engineer" --job-url "https://example.com/pozice"
    ```
 
-   Skript aktualizuje přehled vzdálených větví z `origin`, vybere volné pořadové číslo a vytvoří větev z lokální `main`. Zapíše firmu, pozici, větev a celé zadání do README; metadata uloží do `application.json`. Pro jiný jazyk lze přidat `--language en` nebo `--language de`.
+   Skript aktualizuje přehled vzdálených větví z `origin`, vybere volné pořadové číslo a vytvoří větev z lokální `main`. Zapíše firmu, pozici, jazyk, větev a případný odkaz do README; metadata uloží do `application.json`. Pro jiný jazyk lze přidat `--language en` nebo `--language de`. Veřejný popis pozice lze doplnit podle nabídky. Osobní prompty, odpovědi z chatu a interní poznámky do README nepatří.
 3. Přizpůsobit hlavní CV v `body.tex` zadání podle [profesního profilu](skills/cv-tailor/references/professional-profile.md) a [skillu cv-tailor](skills/cv-tailor/SKILL.md). Vybrat a seřadit relevantní zkušenosti, případně zkrátit technologický přehled; úplný základ zůstává na `main`.
 4. Zkompilovat CV:
 
@@ -65,7 +65,7 @@ Komplexní hlavní CV: [CV-Martin-Hajek-main.pdf](output/CV-Martin-Hajek-main.pd
 | `assets/images/picture.png` | Zdroj portrétu; do barevné hlavičky se vkládá obdélníkový výřez na výšku |
 | `body.tex` | Na `main` komplexní CV; ve firemní větvi obsah přizpůsobený přihlášce |
 | `application.json` | Firma, pozice, větev a jazyk této verze |
-| `README.md` | Na `main` popis šablony; v přihlášce její údaje a celé zadání |
+| `README.md` | Na `main` popis šablony; v přihlášce veřejný popis pozice a základní údaje |
 | `templates/application-readme.md` | Předloha README pro nové přihlášky |
 | `scripts/cv.py` | Zakládání přihlášek a kompilace PDF |
 | `.vscode/tasks.json` | Úlohy pro sestavení, otevření PDF a novou přihlášku přímo z VS Code |

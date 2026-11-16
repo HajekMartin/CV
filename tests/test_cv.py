@@ -50,26 +50,33 @@ class ApplicationTests(unittest.TestCase):
         (self.root / "templates").mkdir()
         shutil.copyfile(SOURCE_ROOT / "templates" / "application-readme.md", self.root / "templates" / "application-readme.md")
         shutil.copyfile(SOURCE_ROOT / ".gitignore", self.root / ".gitignore")
-        shutil.copyfile(SOURCE_ROOT / "application.json", self.root / "application.json")
+        (self.root / "application.json").write_text(json.dumps({
+            "company": None, "position": None, "branch": "main", "language": "cs",
+        }) + "\n")
         (self.root / "body.tex").write_text("Shared template\n")
         (self.root / "README.md").write_text("Template README\n")
         (self.root / "output").mkdir()
         (self.root / "output" / "CV-Martin-Hajek-main.pdf").write_bytes(b"%PDF-template")
         self.commit("Initial template")
         cv.git("push", "-u", "origin", "main")
-        self.brief = parent / "brief.txt"
-        self.brief.write_text("Celé původní zadání.\nReact, C# a AI; text s $ a `kódem`.\n", encoding="utf-8")
-        self.args = argparse.Namespace(company="Škoda Auto", position="Software Engineer", brief_file=str(self.brief), language="cs")
+        self.private_note = self.root / ".local" / "private.txt"
+        self.private_note.parent.mkdir()
+        self.private_note.write_text("Private chat instructions must never appear in the application README.\n", encoding="utf-8")
+        self.args = argparse.Namespace(company="Škoda Auto", position="Software Engineer", job_url="https://example.com/careers/software-engineer", language="cs")
 
     def commit(self, message):
         cv.git("add", ".")
         cv.git("commit", "-m", message)
 
-    def test_application_preserves_brief_and_starts_from_main(self):
+    def test_application_uses_public_job_details_and_starts_from_main(self):
         cv.new_application(self.args)
         self.assertEqual(cv.git("branch", "--show-current"), "skoda-auto")
         readme = (self.root / "README.md").read_text()
-        self.assertIn(self.brief.read_text().strip(), readme)
+        self.assertIn(self.args.job_url, readme)
+        self.assertIn(self.args.position, readme)
+        self.assertNotIn(self.private_note.read_text().strip(), readme)
+        metadata = json.loads((self.root / "application.json").read_text())
+        self.assertEqual(metadata["job_url"], self.args.job_url)
         self.assertIn("output/CV-Martin-Hajek-skoda-auto.pdf", readme)
         self.assertEqual(json.loads((self.root / "application.json").read_text())["branch"], "skoda-auto")
         self.assertFalse((self.root / "output" / "CV-Martin-Hajek-main.pdf").exists())
@@ -79,6 +86,18 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(cv.git("branch", "--show-current"), "skoda-auto-2")
         self.assertEqual((self.root / "body.tex").read_text(), "Shared template\n")
         self.assertEqual(cv.git("show", "main:README.md"), "Template README")
+
+    def test_application_can_be_created_without_job_url(self):
+        self.args.job_url = ""
+        cv.new_application(self.args)
+        self.assertEqual(json.loads((self.root / "application.json").read_text())["job_url"], None)
+        self.assertIn(self.args.position, (self.root / "README.md").read_text())
+
+    def test_job_url_rejects_pasted_chat_instructions(self):
+        self.args.job_url = self.private_note.read_text()
+        with self.assertRaisesRegex(ValueError, "HTTP"):
+            cv.new_application(self.args)
+        self.assertEqual(cv.git("branch", "--show-current"), "main")
 
     def test_remote_branches_reserve_numbers(self):
         cv.git("push", "origin", "main:skoda-auto-3")

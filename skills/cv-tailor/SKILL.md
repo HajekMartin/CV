@@ -32,13 +32,13 @@ Pro konkrétní firmu vyber a seřaď relevantní zkušenosti z hlavního CV a p
 - Znalosti AI a akademické práce nedokládají komerční AI projekt nebo produkční nasazení. AWS, Azure a společná položka Azure AI/AWS Bedrock zůstávají BASICS.
 - Nepřidávej výsledkové metriky, certifikace, absolvovaná školení ani rozsah odpovědnosti bez podkladu. Pokud je cílový výstup potřebuje, upřesni konkrétní chybějící údaj s uživatelem a pokračuj v podložených částech.
 
-## Větev a zadání
+## Větev a popis pozice
 
-Novou přihlášku zakládej z aktuální lokální `main`; zachovej rozpracované změny. Použij `python3 scripts/cv.py new --company "Firma" --position "Pozice" --brief-file /tmp/zadani.txt`, případně úlohu **CV: Nová přihláška** ve VS Code. V souboru musí být celé původní zadání.
+Novou přihlášku zakládej z aktuální lokální `main`; zachovej rozpracované změny. Použij `python3 scripts/cv.py new --company "Firma" --position "Pozice" --job-url "https://example.com/pozice"`, případně úlohu **CV: Nová přihláška** ve VS Code. Odkaz na inzerát je volitelný. Osobní zadání z chatu slouží k práci s CV a nekopíruje se do README.
 
 Větev pojmenuj podle firmy, malými písmeny bez diakritiky, s pomlčkami místo mezer. Další přihlášky do stejné firmy čísluj `firma-2`, `firma-3` atd., i při stejné pozici. Úpravy již existující přihlášky zůstávají v její větvi. Pozici nepřidávej do názvu větve.
 
-README dané větve musí obsahovat firmu, pozici, celé původní zadání, pozdější upřesnění a odkaz na výstup. `application.json` musí odpovídat skutečné větvi a jazyku verze.
+README dané větve obsahuje veřejný popis pozice, odkaz na nabídku a základní údaje: firmu, pozici, jazyk CV, větev a odkaz na PDF. Neuváděj osobní prompt, citace z chatu, doplňující odpovědi ani interní poznámky o kandidátovi nebo tvorbě CV. `application.json` musí odpovídat skutečné větvi a jazyku verze.
 
 ## Sazba, kompilace a odevzdání
 
