@@ -1,0 +1,9 @@
+Dobrý den,
+
+zaujala mě pozice Python Developera v RAG týmu Seznam Asistenta, kde bych chtěl propojit vývojářskou praxi se zájmem o LLM. Mám více než tři roky praxe ve vývoji podnikových aplikací a integrací, převážně v C#/.NET. Pracuji také s GitLab CI/CD a Dockerem.
+
+Python jsem využíval ve školních projektech a AI kurzech; znám principy RAG, LLM API a prompt engineering. Rád se s vámi potkám a proberu, jak své zkušenosti uplatnit při vývoji Seznam Asistenta.
+
+S pozdravem
+Martin Hájek
+LinkedIn: https://www.linkedin.com/in/hajek-martin/
