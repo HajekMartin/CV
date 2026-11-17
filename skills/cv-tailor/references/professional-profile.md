@@ -1,6 +1,6 @@
 # Profesní profil — Martin Hájek
 
-Aktualizováno: 2026-11-16. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu.
+Aktualizováno: 2026-11-17. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu. Dne 2026-11-17 potvrdil znalost principů RAG bez vlastní implementace.
 
 Tento soubor je zdroj podkladů pro CV Tailor, nikoli hotový životopis. Obsahuje také omezení důkazů a otevřené otázky, které nepatří do finálního CV.
 
@@ -123,6 +123,14 @@ Použitelná formulace pro anglické CV:
 > Interested in applying AI to software solutions, with knowledge of LLM APIs, prompt engineering, MCP servers, LangChain and LangGraph, as well as a conceptual understanding of LLM integration and AI agent design and development.
 
 Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní produkční nasazení, výsledky řešení ani roky praxe s AI. Při potřebě konkrétních tvrzení doplnit projekt a osobní odpovědnost od uživatele.
+
+### RAG — přímé upřesnění 2026-11-17
+
+**Zdroj:** přímá odpověď uživatele při přípravě CV pro Solar Turbines: „Znám principy RAG, bez vlastní implementace“.
+
+- Retrieval-Augmented Generation (RAG): znalost principů, bez vlastní implementace. V CV používat označení „RAG — znalost principů“ nebo anglicky „RAG — conceptual understanding“.
+- Toto potvrzení nedokládá dokončený RAG projekt, profesní zkušenost, konkrétní použitou knihovnu, vektorovou databázi ani praxi s evaluací či provozem RAG systémů. Znalost LangChain a LangGraph sama o sobě takovou implementaci nedokládá.
+- Jde o doplnění mimo původní dotazník; počty a hodnocení původních 50 položek se nemění.
 
 ## Další údaje z historických podkladů
 
