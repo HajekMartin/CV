@@ -1,74 +1,27 @@
-# CV — Martin Hájek
+# Martin Hájek — CV pro Seznam.cz
 
-Větev `main` obsahuje komplexní hlavní CV a společnou LaTeXovou šablonu. Zahrnuje pracovní zkušenosti, mezinárodní projekty a koordinaci dodavatele, vzdělání, potvrzené technologie a AI zaměření. Každá nová přihláška vzniká jako specializovaná verze v samostatné větvi podle firmy, s popisem pozice v jejím `README.md` a výsledným PDF ve složce `output/`.
-
-CV používá dvoustránkovou sazbu s tmavě modrou hlavičkou, tyrkysovými akcenty a světlými modrými podklady znalostí. Větší portrét vpravo má obdélníkový formát na výšku, menší přiblížení a prostor kolem hlavy a ramen. Ořez po stranách je součástí LaTeXu, původní obrázek zůstává zachovaný. Technologie, AI a základní znalosti tvoří jeden přehled „Technické znalosti“, uspořádaný do textových řádků podle oblastí, bez technologických ikon a svislých oddělovačů. Základní úroveň je označená přímo u příslušných technologií. AI zahrnuje LLM API, prompt engineering, MCP, LangChain, LangGraph a koncepty AI agentů. Obecné sportovní zájmy se do výchozího CV nezařazují. Kontakty zahrnují osobní GitHub; samostatný odkaz v patičce vede na repozitář v příslušné větvi.
-
-Názvy větví jsou malými písmeny, bez diakritiky a s pomlčkami místo mezer: například `skoda-auto`. Další přihlášky do stejné firmy dostávají `skoda-auto-2`, `skoda-auto-3` atd., i když jde o stejnou pozici. Úpravy jedné existující přihlášky zůstávají v její větvi. Název pozice se ukládá do README a metadat, nikoli do názvu větve.
-
-## Ovládání z Visual Studio Code
-
-Otevři ve VS Code celou složku tohoto repozitáře přes **File → Open Folder…**. Úlohy jsou připravené v [.vscode/tasks.json](.vscode/tasks.json) a potřebují stejný Python a LaTeX kompilátor jako sestavení z terminálu. Další rozšíření nejsou potřeba.
-
-Ulož upravené soubory a stiskni **Cmd+Shift+B** na macOS nebo **Ctrl+Shift+B** na Windows/Linuxu. Výchozí úloha **CV: Sestavit a otevřít PDF** zkompiluje aktuální větev, uloží PDF do `output/` a po úspěchu je otevře ve výchozím systémovém prohlížeči PDF. Výsledek a případné chyby uvidíš v panelu Terminal. [Výchozí build úloha ve VS Code](https://code.visualstudio.com/docs/debugtest/tasks).
-
-Přes **Terminal → Run Task…** jsou dostupné tyto volby:
-
-| Úloha | Co provede |
+| Údaj | Hodnota |
 | --- | --- |
-| **CV: Sestavit a otevřít PDF** | Kompilace a otevření právě vytvořeného PDF |
-| **CV: Pouze sestavit PDF** | Kompilace do `output/` |
-| **CV: Otevřít poslední PDF** | Otevření uloženého PDF aktuální větve bez kompilace |
-| **CV: Nová přihláška** | Formulář pro firmu, pozici, odkaz na nabídku a jazyk; poté založení větve a README |
+| Firma | Seznam.cz, a.s. |
+| Pozice | Python Developer pro RAG tým AI Asistenta |
+| Jazyk CV | Čeština |
+| Formát | PDF, 2 strany A4 |
+| Větev | `seznam-cz` |
 
-Spusť **CV: Nová přihláška**, vyplň firmu, pozici, jazyk a případně veřejný odkaz na nabídku. Ostatní rozpracované změny nejprve ulož do commitu přes panel **Source Control**; šablona musí být uložená na `main`. README nové větve obsahuje jen veřejný popis pozice, základní údaje a odkaz na CV. Osobní pokyny a citace z chatu se do něj nepřenášejí. Po přizpůsobení `body.tex` sestavíš přihlášku stejnou klávesovou zkratkou.
+## Životopis
 
-Z terminálu lze stejné otevření spustit pomocí `python3 scripts/cv.py build --open`, případně `python3 scripts/cv.py open` pro již uložené PDF.
+[Stáhnout CV v PDF](output/CV-Martin-Hajek-seznam-cz.pdf)
 
-## Postup při novém zadání
+## Pracovní nabídka
 
-1. Vycházet z aktuální větve `main`. Rozpracovanou práci nejprve uložit, aby bylo možné bezpečně přepnout větev.
-2. Založit přihlášku podle firmy a pozice, případně přidat veřejný odkaz na nabídku:
+[Python Developer pro RAG tým AI Asistenta — původní inzerát na Jobs.cz](https://www.jobs.cz/fp/seznam-cz-a-s-229258/2001528430/)
 
-   ```sh
-   python3 scripts/cv.py new --company "Škoda Auto" --position "Software Engineer" --job-url "https://example.com/pozice"
-   ```
+Backendový vývoj v Pythonu pro Seznam Asistenta se zaměřením na RAG. Náplní je příprava, čištění a indexace dat, vyhledávání a předávání relevantního kontextu jazykovému modelu s ohledem na přesnost, latenci a výpočetní nároky.
 
-   Skript aktualizuje přehled vzdálených větví z `origin`, vybere volné pořadové číslo a vytvoří větev z lokální `main`. Zapíše firmu, pozici, jazyk, větev a případný odkaz do README; metadata uloží do `application.json`. Pro jiný jazyk lze přidat `--language en` nebo `--language de`. Veřejný popis pozice lze doplnit podle nabídky. Osobní prompty, odpovědi z chatu a interní poznámky do README nepatří.
-3. Přizpůsobit hlavní CV v `body.tex` zadání podle [profesního profilu](skills/cv-tailor/references/professional-profile.md) a [skillu cv-tailor](skills/cv-tailor/SKILL.md). Vybrat a seřadit relevantní zkušenosti, případně zkrátit technologický přehled; úplný základ zůstává na `main`.
-4. Zkompilovat CV:
+Prostředí zahrnuje Elasticsearch, Kubernetes s provozem ve více datových centrech, GitLab, Argo CD a Linux. Ke sledování služeb slouží Prometheus, Grafana, Kibana a OpenTelemetry. Tým pracuje ve Scrumu.
 
-   ```sh
-   python3 scripts/cv.py build
-   ```
+Požadováno je programování v Pythonu, orientace v principech RAG, embeddings, vektorovém vyhledávání, chunkingu a prompt engineeringu. Důraz je na schopnost vysvětlit technický návrh, spolupracovat a odpovídat za kvalitu řešení.
 
-5. Zkontrolovat PDF, text, diakritiku a odkaz v patičce. Výstup pojmenovaný `output/CV-Martin-Hajek-<vetev>.pdf` patří do stejné větve jako zdroje a README.
+**Lokality:** České Budějovice, Ostrava, Praha nebo Zlín. **Úvazek:** plný. Nabídka uvádí možnost občasné práce z domova.
 
-Skript pro novou přihlášku potřebuje čistý pracovní strom a uloženou šablonu na `main`. Při práci v jiné přihlášce se její obsah nepřenáší do nové větve. Při aktualizaci existující přihlášky stačí upravit její soubory a znovu spustit `build`.
-
-## Kompilace a výstupy
-
-Je potřeba Python 3.10+ a [Tectonic](https://tectonic-typesetting.github.io/book/latest/installation/), případně XeLaTeX nebo LuaLaTeX s potřebnými balíčky TeX Live. Skript hledá Tectonic také v `.tools/tectonic`. Konkrétní kompilátor lze vybrat přes `--engine tectonic`, `--engine xelatex` nebo `--engine lualatex`.
-
-Tectonic při prvním sestavení stahuje potřebné LaTeXové balíčky; jeho cache se ukládá do `.cache/tectonic/`. Pomocné soubory a logy jsou v `.build/`. Tyto složky ani lokální nástroje v `.tools/` se neverzují; hotová PDF v `output/` se verzují.
-
-Kompilaci spouštět přes skript: z aktuální Git větve a adresy `origin` vytvoří kontext pro LaTeX a odkaz na repozitář v této větvi na GitHubu. `application.json` musí odpovídat skutečné větvi. V patičce každé stránky je klikací odkaz na `https://github.com/HajekMartin/CV/tree/<vetev>`, například `tree/main` nebo `tree/skoda-auto-2`. Odkaz nevede přímo na PDF; příslušná větev musí být nahraná na GitHub. Osobní GitHub v kontaktech vede na `https://github.com/HajekMartin`.
-
-Komplexní hlavní CV: [CV-Martin-Hajek-main.pdf](output/CV-Martin-Hajek-main.pdf).
-
-## Soubory
-
-| Soubor | Účel |
-| --- | --- |
-| `main.tex` | Společná sazba, hlavička a patička s odkazem na danou verzi CV |
-| `info.tex` | Jméno a kontaktní údaje včetně GitHubu |
-| `assets/images/picture.png` | Zdroj portrétu; do barevné hlavičky se vkládá obdélníkový výřez na výšku |
-| `body.tex` | Na `main` komplexní CV; ve firemní větvi obsah přizpůsobený přihlášce |
-| `application.json` | Firma, pozice, větev a jazyk této verze |
-| `README.md` | Na `main` popis šablony; v přihlášce veřejný popis pozice a základní údaje |
-| `templates/application-readme.md` | Předloha README pro nové přihlášky |
-| `scripts/cv.py` | Zakládání přihlášek a kompilace PDF |
-| `.vscode/tasks.json` | Úlohy pro sestavení, otevření PDF a novou přihlášku přímo z VS Code |
-| `output/` | Hotová PDF určená k uložení spolu s danou verzí |
-
-Kontrola skriptů: `python3 -m unittest discover -s tests -v`.
+Výběrové řízení zahrnuje úvodní rozhovor, programovací úlohu v Codility, online setkání a osobní pohovor.

@@ -1,7 +1,7 @@
 {
-  "company": null,
-  "position": null,
-  "branch": "main",
+  "company": "Seznam.cz",
+  "position": "Python Developer pro RAG tým AI Asistenta",
+  "branch": "seznam-cz",
   "language": "cs",
-  "job_url": null
+  "job_url": "https://www.jobs.cz/fp/seznam-cz-a-s-229258/2001528430/"
 }
