@@ -1,0 +1,9 @@
+Dobrý den,
+
+v KAMAX vyvíjím podnikové aplikace v C#/.NET od analýzy požadavků po nasazení a spravuji GitLab CI/CD.
+
+Při programování používám Codex a mám znalost Claude Code. Zkouším i další platformy, například Kimi, a hledám způsoby, jak Claude Code využívat efektivněji. Pozice mě zajímá možností propojit zkušenosti z podnikového vývoje s praktickým zaváděním AI do práce vývojových týmů.
+
+S pozdravem
+Martin Hájek
+LinkedIn: https://www.linkedin.com/in/hajek-martin/
