@@ -1,6 +1,6 @@
 # Profesní profil — Martin Hájek
 
-Aktualizováno: 2026-11-17. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu. Dne 2026-11-17 potvrdil znalost principů RAG bez vlastní implementace.
+Aktualizováno: 2026-11-19. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu. Dne 2026-11-17 potvrdil znalost principů RAG bez vlastní implementace. Dne 2026-11-19 dodal odkazy na kurzové projekty Hugging Face a Laba.
 
 Tento soubor je zdroj podkladů pro CV Tailor, nikoli hotový životopis. Obsahuje také omezení důkazů a otevřené otázky, které nepatří do finálního CV.
 
@@ -132,6 +132,15 @@ Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní prod
 - Toto potvrzení nedokládá dokončený RAG projekt, profesní zkušenost, konkrétní použitou knihovnu, vektorovou databázi ani praxi s evaluací či provozem RAG systémů. Znalost LangChain a LangGraph sama o sobě takovou implementaci nedokládá.
 - Jde o doplnění mimo původní dotazník; počty a hodnocení původních 50 položek se nemění.
 
+### Kurzové projekty Hugging Face a Laba — doplnění 2026-11-19
+
+**Zdroj:** uživatel dodal oba repozitáře pro motivační dopis společnosti 21 Consult Group. Dne 2026-11-19 byly přečteny jejich README a vybrané zdrojové soubory; aplikace ani jejich testy při této kontrole nebyly spouštěny.
+
+- **[Hugging Face Agents Course](https://github.com/HajekMartin/agents-course-huggingface)**, zkontrolovaný commit `4511b8c`: lokální adaptace kurzových příkladů pro Ollama. Repozitář obsahuje agenta se smolagents a nástroji a příklad agentního RAG nad seznamem hostů s LlamaIndex, lokálními embeddings a rozhraním Gradio. Dokumentace uvádí návaznost na původní kurzové šablony.
+- **[Kurz agentů Laba](https://github.com/HajekMartin/agents-course-laba)**, zkontrolovaný commit `25cad79`: projekt `01` obsahuje Python agenta pro Bazoš a Sbazar, smolagents, MCP servery, agentgateway a lokální LLM v Unsloth Studio. Projekt `02` obsahuje finančního asistenta v n8n s PostgreSQL, importy CSV/XLSX/textového PDF a dotazováním nad transakcemi přes nástroje agenta; k dispozici jsou exporty workflow a SQL.
+- Použitelné jako **kurzové ukázky a odkazy na zdrojové kódy**. Neprezentovat je jako komerční AI projekty, produkty s platícími zákazníky nebo nasazení v KAMAX. Počty skutečných uživatelů, dokončení celých kurzů, certifikace ani přesný osobní podíl na jednotlivých částech nebyly potvrzeny. Samotný repozitář nedokládá původní autorství každé části kódu.
+- Přítomnost učebního příkladu RAG nemění uživatelovo přímé hodnocení z 2026-11-17: znalost principů bez vlastní implementace. Vyšší individuální úroveň RAG a rozsah vlastního implementačního podílu případně upřesnit. Nově doložené nástroje uvádět v kontextu kurzových projektů; původní hodnocení YES/BASICS/NO a počty 50 položek se nemění.
+
 ## Další údaje z historických podkladů
 
 - Node.js, SSO, SAP, SharePoint, MES, Codex a ChatGPT se objevují v dodaných CV nebo předchozích vyjádřeních. Nejsou samostatně ohodnocené dotazníkem; neodvozovat délku praxe, senioritu, hloubku znalosti ani certifikace. Pokud nabídka vyžaduje přesnou úroveň, upřesnit ji.
@@ -154,6 +163,6 @@ Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní prod
 - Doložit konkrétní projekty, délku používání a odpovědnost u klíčových technologií, až to bude relevantní pro cílovou nabídku.
 - Pokud budoucí podklady změní chronologii, porovnat je s pokynem uživatele z 2026-11-16; současné zaměstnání KAMAX je k tomuto dni potvrzené.
 - Rozlišit jednotlivé úrovně Azure AI a AWS Bedrock a případně dalších společně hodnocených frameworků.
-- Upřesnit konkrétní AI či MCP projekt, použité nástroje a osobní podíl, pokud má CV obsahovat tvrzení o praktické implementaci nebo profesním výsledku.
+- U doložených kurzových AI/MCP projektů případně upřesnit osobní implementační podíl, praktické používání a výsledky. Profesní či komerční AI projekt a jeho výsledky zatím potvrzené nejsou.
 - Při potřebě přesnějších tvrzení upřesnit hloubku znalosti a konkrétní použití LangChain a LangGraph.
 - Při potřebě podrobnějšího popisu dodavatelské spolupráce doplnit vlastní rozhodovací pravomoci, tým, průběh předávání a výsledky; při potřebě technické znalosti Ignition oddělit koordinaci projektu od implementace platformy.
