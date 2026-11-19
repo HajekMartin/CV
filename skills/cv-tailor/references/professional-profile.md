@@ -153,6 +153,14 @@ V navazujícím zadání téhož dne uživatel požádal uložit oba kurzy jako 
 - Použitelné jako **kurzové ukázky a odkazy na zdrojové kódy**. Neprezentovat je jako komerční AI projekty, produkty s platícími zákazníky nebo nasazení v KAMAX. Počty skutečných uživatelů, dokončení celých kurzů, certifikace ani přesný osobní podíl na jednotlivých částech nebyly potvrzeny. Samotný repozitář nedokládá původní autorství každé části kódu.
 - Přítomnost učebního příkladu RAG nemění uživatelovo přímé hodnocení z 2026-11-17: znalost principů bez vlastní implementace. Vyšší individuální úroveň RAG a rozsah vlastního implementačního podílu případně upřesnit. Nově doložené nástroje uvádět v kontextu kurzových projektů; původní hodnocení YES/BASICS/NO a počty 50 položek se nemění.
 
+## Adaptace na programovací jazyky — přímé vyjádření 2026-11-19
+
+**Zdroj:** přímé zadání uživatele pro průvodní dopis do Agnostix.
+
+- Uživatel se podle vlastního hodnocení rychle adaptuje na jiný programovací jazyk. Přirovnává jazyky ke značkám aut: ovládání některých prvků se liší, základní principy zůstávají stejné.
+- Vnímá, že s podporou AI nástrojů pro kódování má větší význam návrh a kvalita kódu než znalost konkrétní syntaxe; přechod mezi Pythonem a .NET pro něj není zásadní překážkou.
+- Jde o vlastní hodnocení a profesní přístup, nikoli doklad rychlosti zaškolení, stejné hloubky znalostí všech jazyků nebo komerční praxe v Pythonu. Dosavadní úrovně znalostí a studijní či kurzový kontext Pythonu se nemění.
+
 ## Další údaje z historických podkladů
 
 - Node.js, SSO, SAP, SharePoint, MES, Codex a ChatGPT se objevují v dodaných CV nebo předchozích vyjádřeních. Nejsou samostatně ohodnocené dotazníkem; neodvozovat délku praxe, senioritu, hloubku znalosti ani certifikace. Pokud nabídka vyžaduje přesnou úroveň, upřesnit ji.
