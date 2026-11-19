@@ -1,6 +1,6 @@
 # Profesní profil — Martin Hájek
 
-Aktualizováno: 2026-11-19. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu. Dne 2026-11-17 potvrdil znalost principů RAG bez vlastní implementace. Dne 2026-11-19 dodal odkazy na kurzové projekty Hugging Face a Laba.
+Aktualizováno: 2026-11-19. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu. Dne 2026-11-17 potvrdil znalost principů RAG bez vlastní implementace. Dne 2026-11-19 dodal odkazy na kurzové projekty Hugging Face a Laba a upřesnil Smart Shopfloor, obměnu MES a mezinárodní .NET řešení v KAMAX.
 
 Tento soubor je zdroj podkladů pro CV Tailor, nikoli hotový životopis. Obsahuje také omezení důkazů a otevřené otázky, které nepatří do finálního CV.
 
@@ -42,7 +42,7 @@ Původ podrobné chronologie je výchozí profil s údaji údajně z LinkedIn; m
 - Správa GitLab platformy a repozitářů, tvorba a správa GitLab CI/CD pipeline.
 - Nasazování přes IIS a Docker; spolupráce s dalšími vývojovými týmy a německými závody, v některých případech v roli vedoucího projektu. Nevyvozovat z toho samostatnou manažerskou pozici nebo velikost týmu.
 - Analýza požadavků, návrh softwarových řešení a mezinárodní spolupráce v angličtině.
-- Používání aplikací hostovaných v AWS a kontakt s ekosystémem Azure. Odpovědnost za cloudovou architekturu není doložena; přímé hodnocení AWS a Azure je BASICS.
+- Práce s aplikací Smart Shopfloor hostovanou v AWS a kontakt s ekosystémem Azure. Uživatel 2026-11-19 upřesnil svou roli v přizpůsobení a zavedení aplikace v Turnově a její integraci do MES; podrobnosti jsou níže. Odpovědnost za cloudovou architekturu není doložena; přímé hodnocení AWS a Azure zůstává BASICS.
 - Původní `body.tex` v pracovních činnostech uváděl OAuth 2.0, OpenID Connect a OpenIddict; mezi dovednostmi také správu Linux serverů a automatizaci procesů. Přesný rozsah těchto činností není samostatně upřesněn.
 
 ## Mezinárodní projekty a koordinace dodavatele — doplnění 2026-11-16
@@ -55,6 +55,16 @@ Původ podrobné chronologie je výchozí profil s údaji údajně z LinkedIn; m
 - Konkrétní kontext: zavádění nového MES systému na platformě Ignition v KAMAX. Pro obecné CV lze zkušenost zkrátit na koordinaci dodavatele a týdenních sprintů; pro MES či průmyslové nabídky uvést i Ignition.
 
 Vhodné označení: **koordinace dodávky softwaru a spolupráce s externím dodavatelem**; anglicky **software delivery coordination / vendor coordination**. Neodvozovat formální pozici Scrum Master, Product Owner či Project Manager, certifikaci Scrum, odpovědnost za rozpočet nebo samostatnou správu celého programu. Ignition je doložen v kontextu koordinace zavádění; vlastní programování nebo administrace této platformy zatím potvrzené nejsou. Nové informace nemění počty ani hodnocení původního technologického dotazníku.
+
+## Pracovní projekty KAMAX — přímé upřesnění 2026-11-19
+
+**Zdroj:** přímé doplnění uživatele při požadavku na portfolio v hlavním CV. Kontext KAMAX označuje také zkratkou KX; pro cílové závody používá označení TUR. Přesné období jednotlivých projektů, velikost týmu ani výsledkové metriky neuvedl.
+
+- **Smart Shopfloor:** aplikace provozovaná v AWS pro online sledování strojů v KAMAX. Uživatel aplikaci přizpůsobil pro KAMAX Turnov, zprovoznil její používání v tomto závodě a provedl integraci do interních MES systémů. Jde o doloženou aplikační a integrační roli; nevyvozovat vytvoření celé aplikace od začátku, původní autorství platformy ani správu či návrh infrastruktury AWS. AWS zůstává BASICS, hosting aplikace lze věcně uvést.
+- **Nahrazení / obměna MES systémů:** uživatel byl členem projektového týmu. Navazuje na dříve popsané zavádění nového MES na platformě Ignition a koordinaci externího dodavatele v týdenních sprintech. Uvádět účast v týmu a konkrétní koordinaci; neodvozovat vedení celého programu, samostatnou implementaci Ignition ani formální Scrum roli.
+- **Mezinárodní aplikace v .NET:** uživatel v rámci KAMAX spolupracuje s IT týmy v Německu, podílí se na vývoji jejich řešení a jeho integraci pro závody TUR. Je doložená spolupráce na vývoji a integracích, nikoli výhradní autorství nebo vlastnictví celé aplikace. Přesný název a funkční oblast řešení zatím nejsou uvedeny; nespojovat automaticky s projekty kvality nebo logistiky.
+
+Pracovní projekty lze do portfolia uvést popisem kontextu a osobní role. Veřejné repozitáře, demonstrační odkazy, počty uživatelů ani úspory těchto interních řešení zatím nebyly dodány. Jejich sazba v `portfolio.tex` není samostatným zdrojem nových tvrzení.
 
 ## Potvrzené znalosti — YES, 33 z 50 položek
 
@@ -76,7 +86,7 @@ Profesní použití jednotlivých technologií uvádět pouze tam, kde je podlo�
 
 - **Java:** pouze školní projekty. Neuvádět ji jako doloženou pracovní praxi.
 - **Python:** školní projekty a AI projekty v rámci AI kurzů. Délka používání, jména kurzů, certifikace ani profesionální praxe nebyly potvrzeny.
-- Uživatel nemá konkrétní samostatný AI/LLM projekt k popisu v CV. Nevytvářet projektovou položku, implementační příběh ani výsledky bez dalších podkladů.
+- K tomuto dni uživatel neuvedl konkrétní samostatný AI/LLM projekt k popisu v CV. Dne 2026-11-19 následně dodal kurzové repozitáře Hugging Face a Laba, popsané níže; komerční AI projekt zatím doložený není.
 - AI uvádět především jako znalost rámců a konceptů již zaznamenaných v profilu: LLM API, prompt engineering, MCP, LangChain, LangGraph, smolagents a obecné principy AI agentů. Smolagents uživatel znovu výslovně zmínil; přesnou individuální úroveň neurčil.
 - Požadavek inzerátu na dva roky zkušeností s Javou nebo Pythonem nelze z těchto údajů prezentovat jako splněný. Původní hodnocení YES se nemění; upřesnil se kontext použití.
 
@@ -136,6 +146,8 @@ Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní prod
 
 **Zdroj:** uživatel dodal oba repozitáře pro motivační dopis společnosti 21 Consult Group. Dne 2026-11-19 byly přečteny jejich README a vybrané zdrojové soubory; aplikace ani jejich testy při této kontrole nebyly spouštěny.
 
+V navazujícím zadání téhož dne uživatel výslovně požádal zařadit oba kurzy do portfolia na `main` pro budoucí přihlášky.
+
 - **[Hugging Face Agents Course](https://github.com/HajekMartin/agents-course-huggingface)**, zkontrolovaný commit `4511b8c`: lokální adaptace kurzových příkladů pro Ollama. Repozitář obsahuje agenta se smolagents a nástroji a příklad agentního RAG nad seznamem hostů s LlamaIndex, lokálními embeddings a rozhraním Gradio. Dokumentace uvádí návaznost na původní kurzové šablony.
 - **[Kurz agentů Laba](https://github.com/HajekMartin/agents-course-laba)**, zkontrolovaný commit `25cad79`: projekt `01` obsahuje Python agenta pro Bazoš a Sbazar, smolagents, MCP servery, agentgateway a lokální LLM v Unsloth Studio. Projekt `02` obsahuje finančního asistenta v n8n s PostgreSQL, importy CSV/XLSX/textového PDF a dotazováním nad transakcemi přes nástroje agenta; k dispozici jsou exporty workflow a SQL.
 - Použitelné jako **kurzové ukázky a odkazy na zdrojové kódy**. Neprezentovat je jako komerční AI projekty, produkty s platícími zákazníky nebo nasazení v KAMAX. Počty skutečných uživatelů, dokončení celých kurzů, certifikace ani přesný osobní podíl na jednotlivých částech nebyly potvrzeny. Samotný repozitář nedokládá původní autorství každé části kódu.
@@ -166,3 +178,4 @@ Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní prod
 - U doložených kurzových AI/MCP projektů případně upřesnit osobní implementační podíl, praktické používání a výsledky. Profesní či komerční AI projekt a jeho výsledky zatím potvrzené nejsou.
 - Při potřebě přesnějších tvrzení upřesnit hloubku znalosti a konkrétní použití LangChain a LangGraph.
 - Při potřebě podrobnějšího popisu dodavatelské spolupráce doplnit vlastní rozhodovací pravomoci, tým, průběh předávání a výsledky; při potřebě technické znalosti Ignition oddělit koordinaci projektu od implementace platformy.
+- Pro přesnější projektové přihlášky případně doplnit období a výsledky Smart Shopfloor, obměny MES a mezinárodní .NET aplikace; název a funkční oblast .NET řešení a bližší označení závodů TUR zatím nejsou rozvedené.

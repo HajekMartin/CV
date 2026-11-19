@@ -1,8 +1,8 @@
 # CV — Martin Hájek
 
-Větev `main` obsahuje komplexní hlavní CV a společnou LaTeXovou šablonu. Zahrnuje pracovní zkušenosti, mezinárodní projekty a koordinaci dodavatele, vzdělání, potvrzené technologie a AI zaměření. Každá nová přihláška vzniká jako specializovaná verze v samostatné větvi podle firmy, s popisem pozice v jejím `README.md` a výsledným PDF ve složce `output/`.
+Větev `main` obsahuje komplexní hlavní CV, projektové portfolio a společnou LaTeXovou šablonu. Zahrnuje pracovní zkušenosti, mezinárodní projekty a koordinaci dodavatele, vzdělání, potvrzené technologie a AI zaměření. Každá nová přihláška vzniká jako specializovaná verze v samostatné větvi podle firmy, s popisem pozice v jejím `README.md` a výsledným PDF ve složce `output/`.
 
-CV používá dvoustránkovou sazbu s tmavě modrou hlavičkou, tyrkysovými akcenty a světlými modrými podklady znalostí. Větší portrét vpravo má obdélníkový formát na výšku, menší přiblížení a prostor kolem hlavy a ramen. Ořez po stranách je součástí LaTeXu, původní obrázek zůstává zachovaný. Technologie, AI a základní znalosti tvoří jeden přehled „Technické znalosti“, uspořádaný do textových řádků podle oblastí, bez technologických ikon a svislých oddělovačů. Základní úroveň je označená přímo u příslušných technologií. AI zahrnuje LLM API, prompt engineering, MCP, LangChain, LangGraph a koncepty AI agentů. Obecné sportovní zájmy se do výchozího CV nezařazují. Kontakty zahrnují osobní GitHub; samostatný odkaz v patičce vede na repozitář v příslušné větvi.
+Hlavní CV má tři strany: zkušenosti a vzdělání, technické znalosti a jazyky, projektové portfolio. Používá tmavě modrou hlavičku, tyrkysové akcenty a světlé modré podklady znalostí. Větší portrét vpravo má obdélníkový formát na výšku, menší přiblížení a prostor kolem hlavy a ramen. Ořez po stranách je součástí LaTeXu, původní obrázek zůstává zachovaný. Technologie, AI a základní znalosti tvoří jeden přehled „Technické znalosti“, uspořádaný do textových řádků podle oblastí, bez technologických ikon a svislých oddělovačů. Základní úroveň je označená přímo u příslušných technologií. AI zahrnuje LLM API, prompt engineering, MCP, LangChain, LangGraph, principy RAG a koncepty AI agentů. Obecné sportovní zájmy se do výchozího CV nezařazují. Kontakty zahrnují osobní GitHub; samostatný odkaz v patičce vede na repozitář v příslušné větvi.
 
 Názvy větví jsou malými písmeny, bez diakritiky a s pomlčkami místo mezer: například `skoda-auto`. Další přihlášky do stejné firmy dostávají `skoda-auto-2`, `skoda-auto-3` atd., i když jde o stejnou pozici. Úpravy jedné existující přihlášky zůstávají v její větvi. Název pozice se ukládá do README a metadat, nikoli do názvu větve.
 
@@ -56,6 +56,18 @@ Kompilaci spouštět přes skript: z aktuální Git větve a adresy `origin` vyt
 
 Komplexní hlavní CV: [CV-Martin-Hajek-main.pdf](output/CV-Martin-Hajek-main.pdf).
 
+## Portfolio pro budoucí přihlášky
+
+Třetí strana obsahuje projekty, ze kterých lze vybírat podle pracovní nabídky:
+
+- **Smart Shopfloor:** přizpůsobení aplikace hostované v AWS, zavedení používání v KAMAX Turnov a integrace s interními MES systémy pro online sledování strojů.
+- **Obměna MES:** účast v projektovém týmu v KAMAX, spolupráce s dodavatelem a zavádění nového řešení na platformě Ignition.
+- **Mezinárodní .NET aplikace:** spolupráce s IT týmy v Německu na vývoji řešení a integraci pro závody TUR.
+- **[Hugging Face Agents Course](https://github.com/HajekMartin/agents-course-huggingface):** lokální kurzové příklady AI agentů, nástrojů a agentního RAG.
+- **[Kurz agentů Laba](https://github.com/HajekMartin/agents-course-laba):** vyhledávací agent pro bazary přes MCP a finanční asistent v n8n s PostgreSQL.
+
+Sazba je samostatně v [portfolio.tex](portfolio.tex), který načítá `body.tex`. Ve firemní větvi lze vybrat relevantní projekty nebo portfolio vynechat odstraněním jeho načtení a souvisejícího zalomení stránky z `body.tex`. Podrobný popis osobních rolí a zdroje údajů jsou v [profesním profilu](skills/cv-tailor/references/professional-profile.md).
+
 ## Soubory
 
 | Soubor | Účel |
@@ -64,6 +76,7 @@ Komplexní hlavní CV: [CV-Martin-Hajek-main.pdf](output/CV-Martin-Hajek-main.pd
 | `info.tex` | Jméno a kontaktní údaje včetně GitHubu |
 | `assets/images/picture.png` | Zdroj portrétu; do barevné hlavičky se vkládá obdélníkový výřez na výšku |
 | `body.tex` | Na `main` komplexní CV; ve firemní větvi obsah přizpůsobený přihlášce |
+| `portfolio.tex` | Pracovní a kurzové projekty s osobní rolí a veřejnými odkazy; na `main` třetí strana CV |
 | `application.json` | Firma, pozice, větev a jazyk této verze |
 | `README.md` | Na `main` popis šablony; v přihlášce veřejný popis pozice a základní údaje |
 | `templates/application-readme.md` | Předloha README pro nové přihlášky |

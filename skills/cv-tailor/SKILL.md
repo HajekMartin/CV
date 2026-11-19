@@ -1,6 +1,6 @@
 ---
 name: cv-tailor
-description: Udržuje komplexní hlavní CV a profesní profil Martina Hájka a připravuje z nich specializované životopisy, průvodní a motivační dopisy (cover letter) a medailonky pro konkrétní firmy. Použij pro jeho profesní podklady, výběr doložených zkušeností a odevzdání výstupů v tomto repozitáři.
+description: Udržuje komplexní hlavní CV, projektové portfolio a profesní profil Martina Hájka a připravuje z nich specializované životopisy, průvodní a motivační dopisy (cover letter) a medailonky pro konkrétní firmy. Použij pro jeho profesní podklady, výběr doložených zkušeností a odevzdání výstupů v tomto repozitáři.
 ---
 
 # CV Tailor — Martin Hájek
@@ -9,15 +9,18 @@ Před obsahovou prací přečti celý [profesní profil](references/professional
 
 ## Hlavní CV a specializované verze
 
-`main` obsahuje komplexní hlavní CV: profesní profil, zaměstnání a konkrétní činnosti, vzdělání, všechny potvrzené technologické oblasti, AI zaměření, jasně označené základní znalosti a jazyky. Je to obsahový základ pro další přihlášky. Udržuj jej ucelený, věcný a profesionální; délku řeš čitelnou sazbou a uspořádáním, ne vynecháním podstatných zkušeností nebo drobným písmem.
+`main` obsahuje komplexní hlavní CV: profesní profil, zaměstnání a konkrétní činnosti, vzdělání, všechny potvrzené technologické oblasti, AI zaměření, jasně označené základní znalosti, jazyky a projektové portfolio. Je to obsahový základ pro další přihlášky. Udržuj jej ucelený, věcný a profesionální; délku řeš čitelnou sazbou a uspořádáním, ne vynecháním podstatných zkušeností nebo drobným písmem.
 
 Pro konkrétní firmu vyber a seřaď relevantní zkušenosti z hlavního CV a profilu. Uprav úvod, důraz pracovních bodů, výběr technologií a případný motivační dopis podle nabídky. Zachovej doložená fakta a požadovaný jazyk. Specializovaná verze může být kratší; úzké zaměření jedné přihlášky nepřenášej zpět do `main`.
+
+Portfolio je vysázené v kořenovém `portfolio.tex`, který načítá `body.tex`. Pro konkrétní přihlášku jej podle relevance zkrať, vyber jednotlivé projekty, nebo vynech jeho načtení. U projektu uveď účel, osobní roli a doložený kontext; u veřejných kurzových ukázek připoj repozitář. Rozlišuj pracovní projekty KAMAX a učební příklady Hugging Face/Laba. Zdroj faktů a omezení rolí zůstává v profesním profilu, nikoli v odvozeném `portfolio.tex`.
 
 ## Oblasti, které má profil pokrývat
 
 - **Vývoj:** full-stack podnikové aplikace v C#/.NET, TypeScriptu, Reactu a Angularu; interní systémy kvality a výrobní logistiky, REST API a databáze. Další potvrzené backendové a frontendové technologie vybírej z inventáře v profilu.
 - **Integrace a provoz:** MES, SAP, SharePoint, autentizace, GitLab a GitLab CI/CD, IIS, Docker a Linux. Odděluj doloženou pracovní činnost od obecné znalosti nástroje.
-- **Mezinárodní projekty:** spolupráce s vývojovými týmy a německými závody, pracovní komunikace v angličtině, v některých případech vedení projektu.
+- **Pracovní portfolio:** Smart Shopfloor hostovaný v AWS — přizpůsobení a zavedení v KAMAX Turnov, MES integrace; obměna MES — člen projektového týmu; mezinárodní .NET aplikace — spolupráce s IT týmy v Německu na vývoji a integraci pro závody TUR. Přesné role a hranice tvrzení jsou v profesním profilu.
+- **Mezinárodní projekty:** spolupráce s IT týmy v Německu na vývoji .NET řešení a integraci pro závody TUR, pracovní komunikace v angličtině, u vybraných projektů vedení.
 - **Koordinace dodavatele v KAMAX:** komunikace s externím partnerem, kontrola postupu a řešení otevřených bodů v týdenních sprintech. Konkrétní kontext je zavádění MES na platformě Ignition; podle nabídky lze zdůraznit platformu, nebo obecnější koordinaci dodávky softwaru.
 - **AI:** zájem o AI, LLM API a prompt engineering, propojování LLM s aplikacemi a nástroji, MCP servery a obecné principy návrhu AI agentů. AI agents/MCP/smolagents je společně hodnocená položka. LangChain a LangGraph uživatel nově uvedl mezi AI znalostmi 2026-11-16, bez samostatného hodnocení hloubky nebo pracovního použití. Akademický kontext tvoří neuronové sítě v bakalářské práci a predikce výroby FVE v diplomové práci.
 - **Vzdělání a jazyky:** Aplikovaná informatika na TUL, Ing. s vyznamenáním; čeština rodilá, angličtina B2 s pracovní komunikací. Uživatel B2 výslovně potvrdil 2026-11-16 jako vlastní hodnocení. Úroveň němčiny ani oficiální jazyková certifikace potvrzené nejsou.
@@ -25,11 +28,12 @@ Pro konkrétní firmu vyber a seřaď relevantní zkušenosti z hlavního CV a p
 ## Úroveň a přesnost tvrzení
 
 - YES potvrzuje znalost nebo používání, nikoli automaticky profesionální praxi, senioritu, počet let nebo dokončený projekt.
-- Java je doložená pouze ve školních projektech; Python ve školních projektech a AI kurzech podle přímého upřesnění 2026-11-16. Neuváděj u nich pracovní praxi ani dobu používání bez dalšího potvrzení. Uživatel nemá konkrétní samostatný AI/LLM projekt k popsání v CV; AI prezentuj pomocí potvrzených frameworků, MCP a konceptů, ne vymyšleným projektem.
+- Java je doložená pouze ve školních projektech; Python ve školních projektech a AI kurzech podle přímého upřesnění 2026-11-16. Neuváděj u nich pracovní praxi ani dobu používání bez dalšího potvrzení. Od 2026-11-19 jsou doložené kurzové repozitáře Hugging Face a Laba; použij konkrétní příklady z profilu v kurzovém kontextu. Komerční AI projekt zatím potvrzený není.
 - BASICS vždy označ jako základní znalost. NO neuváděj jako dovednost. Zachovej společně hodnocené skupiny; neodvozuj zvláštní úroveň každé dílčí technologie.
 - Aktuální zaměstnání KAMAX uživatel potvrdil 2026-11-16 a odkázal na chronologii profilu: 06/2022–08/2024 a 01/2025–dosud, ioLabs 09/2024–11/2024. Období KAMAX neslučuj do nepřetržitého zaměstnání.
 - Koordinace sprintů není důkazem formální role Scrum Master, Product Owner či Project Manager. Koordinace zavádění Ignition nedokládá jeho programování, administraci ani architektonickou odpovědnost.
 - Znalosti AI a akademické práce nedokládají komerční AI projekt nebo produkční nasazení. AWS, Azure a společná položka Azure AI/AWS Bedrock zůstávají BASICS.
+- U Smart Shopfloor je AWS doložený jako prostředí aplikace. Potvrzená role se týká přizpůsobení, zavedení používání a MES integrací; nevyvozuj z ní správu cloudové infrastruktury ani vyšší obecnou úroveň AWS.
 - Nepřidávej výsledkové metriky, certifikace, absolvovaná školení ani rozsah odpovědnosti bez podkladu. Pokud je cílový výstup potřebuje, upřesni konkrétní chybějící údaj s uživatelem a pokračuj v podložených částech.
 
 ## Cover letter na požádání
