@@ -1,6 +1,6 @@
 Dobrý den,
 
-v KAMAX vyvíjím podnikové aplikace v C#/.NET od analýzy požadavků po nasazení a spravuji GitLab CI/CD.
+v KAMAX vyvíjím podnikové aplikace v C#/.NET od analýzy požadavků po nasazení a spravuji GitLab CI/CD. S kolegy dokážu plynule komunikovat v angličtině na profesionální úrovni.
 
 Při programování používám Codex a mám znalost Claude Code. Zkouším i další platformy, například Kimi, a hledám způsoby, jak Claude Code využívat efektivněji. Pozice mě zajímá možností propojit zkušenosti z podnikového vývoje s praktickým zaváděním AI do práce vývojových týmů.
 

@@ -224,6 +224,8 @@ V navazujícím zadání téhož dne uživatel požádal uložit oba kurzy jako 
 - **Angličtina:** B2, vlastní hodnocení výslovně potvrzené uživatelem 2026-11-16. Doložena je aktivní pracovní komunikace s mezinárodními a německými týmy. Starší CV uváděla B1/B2; pro nové výstupy použít aktuální B2. Oficiální test ani certifikát nebyl uveden.
 - **Němčina:** úroveň nepotvrzena. Práce s německými týmy nebo požadavek na německé znění CV nedokládají znalost němčiny.
 
+**Angličtina — přímé doplnění 2026-11-19:** při úpravě průvodního dopisu pro E.ON uživatel výslovně potvrdil schopnost plynule komunikovat s kolegy v angličtině na profesionální úrovni. Tuto formulaci lze použít v profesních textech. Poslední výslovně potvrzená úroveň CEFR zůstává B2; toto kvalitativní upřesnění samo o sobě nezakládá hodnocení C1/C2 ani certifikaci.
+
 ## Otevřené otázky pro budoucí upřesnění
 
 - Oddělit pracovní, osobní a studijní použití dalších potvrzených technologií, například Vue.js, Next.js, PostgreSQL, MongoDB a DynamoDB. Kontext Javy a Pythonu byl upřesněn 2026-11-16 výše.
