@@ -67,6 +67,14 @@ Vhodné označení: **koordinace dodávky softwaru a spolupráce s externím dod
 
 Vhodná formulace pro CV: „Samostatné vedení vlastních vývojových projektů i práce v týmech vedených kolegy; podle projektu řízení vývoje a komunikace s dodavatelem. Navrhování technologií pro KAMAX Turnov.“ Neodvozovat formální manažerskou pozici, počet podřízených, odpovědnost za rozpočet ani titul podnikového architekta.
 
+### Motivace k vedení lidí — přímé doplnění 2026-11-19
+
+**Zdroj:** přímé zadání uživatele pro průvodní dopis k pozici Senior Technical Lead / Solution Architect přes acantha.
+
+- Uživatele baví manažerská práce a řízení lidí; uvedl, že si tento zájem ověřil při projektech v KAMAX.
+- Pro motivační text lze propojit tuto projektovou zkušenost s jeho zájmem o roli kombinující technické rozhodování a vedení vývojového týmu.
+- Konkrétní rozsah vedení lidí, velikost týmu, formální přímé podřízení, pravidelné 1:1, hodnocení a mentoring zatím nebyly upřesněny. Neodvozovat z tohoto doplnění formální manažerskou pozici ani konkrétní personální odpovědnosti.
+
 ## Pracovní projekty KAMAX — přímé upřesnění 2026-11-19
 
 **Zdroj:** přímé doplnění uživatele při ukládání projektových podkladů na větvi `main` pro budoucí nabídky vyžadující portfolio. Kontext KAMAX označuje také zkratkou KX; pro cílové závody používá označení TUR. Přesné období jednotlivých projektů, velikost týmu ani výsledkové metriky neuvedl.
