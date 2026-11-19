@@ -101,6 +101,14 @@ Profesní použití jednotlivých technologií uvádět pouze tam, kde je podlo�
 - AI uvádět především jako znalost rámců a konceptů již zaznamenaných v profilu: LLM API, prompt engineering, MCP, LangChain, LangGraph, smolagents a obecné principy AI agentů. Smolagents uživatel znovu výslovně zmínil; přesnou individuální úroveň neurčil.
 - Požadavek inzerátu na dva roky zkušeností s Javou nebo Pythonem nelze z těchto údajů prezentovat jako splněný. Původní hodnocení YES se nemění; upřesnil se kontext použití.
 
+### WPF a MVVM — přímé upřesnění 2026-11-19
+
+**Zdroj:** přímá odpověď uživatele při přípravě přihlášky na Tech Lead / Senior .NET Developer přes Jobs Contact Personal.
+
+- **WPF:** zkušenost ze studia. Neuvádět pracovní praxi, počet let ani profesionální vývoj desktopových aplikací bez dalšího potvrzení.
+- **MVVM:** uživatel jej označil za návrhový vzor a zeptal se na význam požadavku na zkušenost. Konkrétní použití ani úroveň znalosti tím nepotvrdil; neodvozovat praktickou implementaci z potvrzeného WPF.
+- Jde o nové upřesnění mimo původní dotazník; počty a hodnocení jeho 50 položek se nemění.
+
 ## Základní znalosti — BASICS, 7 z 50 položek
 
 - C++
