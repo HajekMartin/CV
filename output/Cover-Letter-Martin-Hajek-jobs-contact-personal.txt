@@ -1,0 +1,7 @@
+Dobrý den,
+
+v KAMAX vyvíjím podnikové aplikace v C#/.NET s Microsoft SQL Serverem a propojuji je s interními systémy. Samostatně vedu vlastní vývojové projekty, navrhuji používané technologie a spolupracuji s IT týmy v Německu. Mám také zkušenost s koordinací externího dodavatele v týdenních sprintech. WPF znám ze studia a v AI kurzech pracuji s agenty, MCP a propojováním LLM s nástroji.
+
+S pozdravem
+Martin Hájek
+LinkedIn: https://www.linkedin.com/in/hajek-martin/
