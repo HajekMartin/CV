@@ -73,6 +73,7 @@ Vhodná formulace pro CV: „Samostatné vedení vlastních vývojových projekt
 
 - Uživatele baví manažerská práce a řízení lidí; uvedl, že si tento zájem ověřil při projektech v KAMAX.
 - Pro motivační text lze propojit tuto projektovou zkušenost s jeho zájmem o roli kombinující technické rozhodování a vedení vývojového týmu.
+- **Navazující přímé upřesnění 2026-11-19:** na otázku k vedení lidí, mentoringu, hodnocení a pravidelným 1:1 uživatel odpověděl, že se jeho zkušenost týká hlavně projektů a technických řešení. Dosavadní praxi tedy prezentovat především jako vedení projektů a návrh technických řešení; vedení lidí jako motivaci k dalšímu profesnímu posunu.
 - Konkrétní rozsah vedení lidí, velikost týmu, formální přímé podřízení, pravidelné 1:1, hodnocení a mentoring zatím nebyly upřesněny. Neodvozovat z tohoto doplnění formální manažerskou pozici ani konkrétní personální odpovědnosti.
 
 ## Pracovní projekty KAMAX — přímé upřesnění 2026-11-19
