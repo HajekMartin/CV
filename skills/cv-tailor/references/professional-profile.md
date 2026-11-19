@@ -1,6 +1,6 @@
 # Profesní profil — Martin Hájek
 
-Aktualizováno: 2026-11-19. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu. Dne 2026-11-17 potvrdil znalost principů RAG bez vlastní implementace. Dne 2026-11-19 dodal odkazy na kurzové projekty Hugging Face a Laba a upřesnil Smart Shopfloor, obměnu MES a mezinárodní .NET řešení v KAMAX.
+Aktualizováno: 2026-11-19. Výchozí profil poskytnutý uživatelem je datován 2026-11-02. Dne 2026-11-16 uživatel doplnil AI zaměření, GitHub, mezinárodní projekty a koordinaci externího dodavatele. Potvrdil, že nadále pracuje v KAMAX, a pro chronologii odkázal na podrobné údaje v tomto profilu. Dne 2026-11-17 potvrdil znalost principů RAG bez vlastní implementace. Dne 2026-11-19 dodal odkazy na kurzové projekty Hugging Face a Laba a upřesnil Smart Shopfloor, obměnu MES a mezinárodní .NET řešení v KAMAX. Téhož dne doplnil samostatné vedení vývojových projektů, práci v týmech vedených kolegy, řízení vývoje a komunikace s dodavatelem a navrhování používaných technologií pro KAMAX Turnov.
 
 Tento soubor je zdroj podkladů pro CV Tailor, nikoli hotový životopis. Obsahuje také omezení důkazů a otevřené otázky, které nepatří do finálního CV.
 
@@ -55,6 +55,17 @@ Původ podrobné chronologie je výchozí profil s údaji údajně z LinkedIn; m
 - Konkrétní kontext: zavádění nového MES systému na platformě Ignition v KAMAX. Pro obecné CV lze zkušenost zkrátit na koordinaci dodavatele a týdenních sprintů; pro MES či průmyslové nabídky uvést i Ignition.
 
 Vhodné označení: **koordinace dodávky softwaru a spolupráce s externím dodavatelem**; anglicky **software delivery coordination / vendor coordination**. Neodvozovat formální pozici Scrum Master, Product Owner či Project Manager, certifikaci Scrum, odpovědnost za rozpočet nebo samostatnou správu celého programu. Ignition je doložen v kontextu koordinace zavádění; vlastní programování nebo administrace této platformy zatím potvrzené nejsou. Nové informace nemění počty ani hodnocení původního technologického dotazníku.
+
+## Samostatnost, projektové role a návrh technologií v KAMAX — doplnění 2026-11-19
+
+**Zdroj:** přímé doplnění uživatele do podkladů hlavní větve `main`.
+
+- V KAMAX má vlastní vývojové projekty, které si samostatně vede.
+- U dalších projektů působí jako člen týmu pod vedením jiného kolegy; jeho role se podle projektu liší.
+- Účastní se také projektů, ve kterých si samostatně řídí vývoj nebo komunikaci s externím dodavatelem.
+- V KAMAX Turnov obvykle předkládá návrh technologií, které se budou používat. Je doložené navrhování technologií, nikoli výhradní či konečná schvalovací pravomoc pro celý závod nebo skupinu KAMAX.
+
+Vhodná formulace pro CV: „Samostatné vedení vlastních vývojových projektů i práce v týmech vedených kolegy; podle projektu řízení vývoje a komunikace s dodavatelem. Navrhování technologií pro KAMAX Turnov.“ Neodvozovat formální manažerskou pozici, počet podřízených, odpovědnost za rozpočet ani titul podnikového architekta.
 
 ## Pracovní projekty KAMAX — přímé upřesnění 2026-11-19
 
@@ -186,5 +197,5 @@ V navazujícím zadání téhož dne uživatel požádal uložit oba kurzy jako 
 - Rozlišit jednotlivé úrovně Azure AI a AWS Bedrock a případně dalších společně hodnocených frameworků.
 - U doložených kurzových AI/MCP projektů případně upřesnit osobní implementační podíl, praktické používání a výsledky. Profesní či komerční AI projekt a jeho výsledky zatím potvrzené nejsou.
 - Při potřebě přesnějších tvrzení upřesnit hloubku znalosti a konkrétní použití LangChain a LangGraph.
-- Při potřebě podrobnějšího popisu dodavatelské spolupráce doplnit vlastní rozhodovací pravomoci, tým, průběh předávání a výsledky; při potřebě technické znalosti Ignition oddělit koordinaci projektu od implementace platformy.
+- Při potřebě podrobnějšího popisu navrhování technologií a dodavatelské spolupráce doplnit rozsah rozhodovacích a schvalovacích pravomocí, tým, průběh předávání a výsledky; při potřebě technické znalosti Ignition oddělit koordinaci projektu od implementace platformy.
 - Pro přesnější projektové přihlášky případně doplnit období a výsledky Smart Shopfloor, obměny MES a mezinárodní .NET aplikace; název a funkční oblast .NET řešení a bližší označení závodů TUR zatím nejsou rozvedené.
