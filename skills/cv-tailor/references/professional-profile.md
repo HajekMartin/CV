@@ -58,7 +58,7 @@ Vhodné označení: **koordinace dodávky softwaru a spolupráce s externím dod
 
 ## Pracovní projekty KAMAX — přímé upřesnění 2026-11-19
 
-**Zdroj:** přímé doplnění uživatele při požadavku na portfolio v hlavním CV. Kontext KAMAX označuje také zkratkou KX; pro cílové závody používá označení TUR. Přesné období jednotlivých projektů, velikost týmu ani výsledkové metriky neuvedl.
+**Zdroj:** přímé doplnění uživatele při ukládání projektových podkladů na větvi `main` pro budoucí nabídky vyžadující portfolio. Kontext KAMAX označuje také zkratkou KX; pro cílové závody používá označení TUR. Přesné období jednotlivých projektů, velikost týmu ani výsledkové metriky neuvedl.
 
 - **Smart Shopfloor:** aplikace provozovaná v AWS pro online sledování strojů v KAMAX. Uživatel aplikaci přizpůsobil pro KAMAX Turnov, zprovoznil její používání v tomto závodě a provedl integraci do interních MES systémů. Jde o doloženou aplikační a integrační roli; nevyvozovat vytvoření celé aplikace od začátku, původní autorství platformy ani správu či návrh infrastruktury AWS. AWS zůstává BASICS, hosting aplikace lze věcně uvést.
 - **Nahrazení / obměna MES systémů:** uživatel byl členem projektového týmu. Navazuje na dříve popsané zavádění nového MES na platformě Ignition a koordinaci externího dodavatele v týdenních sprintech. Uvádět účast v týmu a konkrétní koordinaci; neodvozovat vedení celého programu, samostatnou implementaci Ignition ani formální Scrum roli.
@@ -146,7 +146,7 @@ Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní prod
 
 **Zdroj:** uživatel dodal oba repozitáře pro motivační dopis společnosti 21 Consult Group. Dne 2026-11-19 byly přečteny jejich README a vybrané zdrojové soubory; aplikace ani jejich testy při této kontrole nebyly spouštěny.
 
-V navazujícím zadání téhož dne uživatel výslovně požádal zařadit oba kurzy do portfolia na `main` pro budoucí přihlášky.
+V navazujícím zadání téhož dne uživatel požádal uložit oba kurzy jako projektové podklady na `main` pro budoucí přihlášky. Následně výslovně upřesnil, že výchozí CV portfolio obsahovat nemá; projekty mají být dostupné k vyjmenování, pokud je nabídka vyžaduje.
 
 - **[Hugging Face Agents Course](https://github.com/HajekMartin/agents-course-huggingface)**, zkontrolovaný commit `4511b8c`: lokální adaptace kurzových příkladů pro Ollama. Repozitář obsahuje agenta se smolagents a nástroji a příklad agentního RAG nad seznamem hostů s LlamaIndex, lokálními embeddings a rozhraním Gradio. Dokumentace uvádí návaznost na původní kurzové šablony.
 - **[Kurz agentů Laba](https://github.com/HajekMartin/agents-course-laba)**, zkontrolovaný commit `25cad79`: projekt `01` obsahuje Python agenta pro Bazoš a Sbazar, smolagents, MCP servery, agentgateway a lokální LLM v Unsloth Studio. Projekt `02` obsahuje finančního asistenta v n8n s PostgreSQL, importy CSV/XLSX/textového PDF a dotazováním nad transakcemi přes nástroje agenta; k dispozici jsou exporty workflow a SQL.
@@ -162,6 +162,7 @@ V navazujícím zadání téhož dne uživatel výslovně požádal zařadit oba
 - Navazující preference z 2026-11-16: v CV spojit technologie, AI i základní znalosti do jedné sekce členěné podle oblastí. Úroveň BASICS zachovat u příslušných technologií, bez samostatné sekce. Oddělený inventář YES/BASICS/NO v tomto zdrojovém profilu slouží evidenci a zůstává zachován.
 - Další redakční zadání z 2026-11-16: výraznější barevný styl CV. Nejnovější upřesnění portrétu požaduje menší přiblížení, větší fotografii na výšku a zúžení hlavně po stranách, s prostorem kolem hlavy a ramen. Uživatel požaduje název souboru `picture.png`; zdroj je v `assets/images/picture.png`. Konkrétní paleta tmavě modré a tyrkysové je součástí navržené sazby, nikoli samostatný údaj o profesní zkušenosti.
 - Školení vývojáře SAP bylo v původním `body.tex` uvedeno pouze jako plánované. Neuvádět je jako absolvované školení, certifikaci ani doklad SAP vývojářské praxe.
+- Redakční upřesnění z 2026-11-19: projektové podklady uchovat pro nabídky vyžadující portfolio. Výchozí CV samostatné portfolio neobsahuje; automaticky k němu nepřidávat projektovou přílohu. Podle nabídky lze relevantní projekty vyjmenovat v odpovědi nebo samostatném přehledu.
 
 ## Jazyky
 

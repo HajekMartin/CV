@@ -1,6 +1,6 @@
 ---
 name: cv-tailor
-description: Udržuje komplexní hlavní CV, projektové portfolio a profesní profil Martina Hájka a připravuje z nich specializované životopisy, průvodní a motivační dopisy (cover letter) a medailonky pro konkrétní firmy. Použij pro jeho profesní podklady, výběr doložených zkušeností a odevzdání výstupů v tomto repozitáři.
+description: Udržuje komplexní hlavní CV, profesní profil a projektové podklady pro případné portfolio Martina Hájka a připravuje z nich specializované životopisy, průvodní a motivační dopisy (cover letter) a medailonky pro konkrétní firmy. Použij pro jeho profesní podklady, výběr doložených zkušeností a odevzdání výstupů v tomto repozitáři.
 ---
 
 # CV Tailor — Martin Hájek
@@ -9,11 +9,11 @@ Před obsahovou prací přečti celý [profesní profil](references/professional
 
 ## Hlavní CV a specializované verze
 
-`main` obsahuje komplexní hlavní CV: profesní profil, zaměstnání a konkrétní činnosti, vzdělání, všechny potvrzené technologické oblasti, AI zaměření, jasně označené základní znalosti, jazyky a projektové portfolio. Je to obsahový základ pro další přihlášky. Udržuj jej ucelený, věcný a profesionální; délku řeš čitelnou sazbou a uspořádáním, ne vynecháním podstatných zkušeností nebo drobným písmem.
+`main` obsahuje komplexní hlavní CV: profesní profil, zaměstnání a konkrétní činnosti, vzdělání, všechny potvrzené technologické oblasti, AI zaměření, jasně označené základní znalosti a jazyky. Výchozí PDF neobsahuje samostatné portfolio projektů. Je to obsahový základ pro další přihlášky. Udržuj jej ucelený, věcný a profesionální; délku řeš čitelnou sazbou a uspořádáním, ne vynecháním podstatných zkušeností nebo drobným písmem.
 
 Pro konkrétní firmu vyber a seřaď relevantní zkušenosti z hlavního CV a profilu. Uprav úvod, důraz pracovních bodů, výběr technologií a případný motivační dopis podle nabídky. Zachovej doložená fakta a požadovaný jazyk. Specializovaná verze může být kratší; úzké zaměření jedné přihlášky nepřenášej zpět do `main`.
 
-Portfolio je vysázené v kořenovém `portfolio.tex`, který načítá `body.tex`. Pro konkrétní přihlášku jej podle relevance zkrať, vyber jednotlivé projekty, nebo vynech jeho načtení. U projektu uveď účel, osobní roli a doložený kontext; u veřejných kurzových ukázek připoj repozitář. Rozlišuj pracovní projekty KAMAX a učební příklady Hugging Face/Laba. Zdroj faktů a omezení rolí zůstává v profesním profilu, nikoli v odvozeném `portfolio.tex`.
+Projektové podklady jsou uložené pro nabídky, které požadují portfolio. V takovém případě vyber relevantní příklady do odpovědi nebo samostatného přehledu: účel, osobní role, doložený kontext a u veřejných kurzových ukázek odkaz na repozitář. Rozlišuj pracovní projekty KAMAX a učební příklady Hugging Face/Laba. Volitelnou sazbu poskytuje `portfolio.tex`, který výchozí `body.tex` nenačítá. Portfolio připoj přímo do CV pouze na výslovné zadání uživatele. Zdroj faktů a omezení rolí zůstává v profesním profilu. Tuto preferenci uživatel výslovně upřesnil 2026-11-19.
 
 ## Oblasti, které má profil pokrývat
 
