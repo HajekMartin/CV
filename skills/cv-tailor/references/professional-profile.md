@@ -109,6 +109,14 @@ Profesní použití jednotlivých technologií uvádět pouze tam, kde je podlo�
 - **MVVM:** uživatel jej označil za návrhový vzor a zeptal se na význam požadavku na zkušenost. Konkrétní použití ani úroveň znalosti tím nepotvrdil; neodvozovat praktickou implementaci z potvrzeného WPF.
 - Jde o nové upřesnění mimo původní dotazník; počty a hodnocení jeho 50 položek se nemění.
 
+### Vícevláknové programování — přímé upřesnění 2026-11-19
+
+**Zdroj:** přímá odpověď uživatele při přípravě CV pro Veeam.
+
+- Uživatel potvrdil převážně studijní zkušenosti s vícevláknovým či souběžným programováním v .NET. Konkrétní mechanismy, projekty ani délku používání zatím nerozvedl; neodvozovat samostatně ověřenou úroveň synchronizace nebo správy sdíleného stavu.
+- Pro CV preferuje pozitivní uvedení mezi technickými znalostmi bez upozorňování na absenci produkčního použití. Vhodné označení: „vícevláknové programování“, anglicky „multithreading“. Studijní kontext uchovávat v těchto podkladech; neuvádět pracovní projekt, produkční nasazení nebo pokročilou úroveň bez potvrzení.
+- Doplnění je mimo původní dotazník a nemění počty ani hodnocení jeho 50 položek.
+
 ## Základní znalosti — BASICS, 7 z 50 položek
 
 - C++
