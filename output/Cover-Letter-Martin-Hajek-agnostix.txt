@@ -1,0 +1,9 @@
+Dobrý den,
+
+v KAMAX vyvíjím podnikové aplikace v C#/.NET, integruji je s interními systémy a pracuji s GitLab CI/CD a Dockerem. Python používám ve školních a kurzových AI projektech, včetně kurzů Hugging Face a Laba.
+
+Na jiný jazyk se adaptuji rychle — beru ho jako značku auta: rádio se ovládá jinak, princip řízení zůstává stejný. S podporou AI nástrojů pro kódování je pro mě důležitější správný návrh, čitelnost a funkčnost řešení než konkrétní syntaxe, ať pracuji v Pythonu, nebo .NET.
+
+S pozdravem
+Martin Hájek
+LinkedIn: https://www.linkedin.com/in/hajek-martin/
