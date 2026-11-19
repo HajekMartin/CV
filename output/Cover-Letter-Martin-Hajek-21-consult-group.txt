@@ -1,12 +1,8 @@
 Dobrý den,
 
-zaujala mě možnost hledat u vás příležitosti pro automatizaci a převádět je do nástrojů, které usnadní každodenní práci. Chci navázat na své zkušenosti s podnikovým softwarem a více se věnovat praktickému využití AI při tvorbě interních aplikací a nových produktů.
+v KAMAX vyvíjím interní aplikace v C#/.NET a TypeScriptu, integruji je s MES a koordinuji externího dodavatele při zavádění nového MES.
 
-V KAMAX vyvíjím aplikace pro řízení kvality a výrobní logistiku v C#/.NET a TypeScriptu. Podílím se na analýze požadavků, návrhu, integracích i nasazení řešení. Zároveň koordinuji externího dodavatele při zavádění nového MES na platformě Ignition, včetně týdenních sprintů a řešení otevřených bodů. Tato práce mě vede k propojení technického návrhu s konkrétními potřebami lidí ve výrobě.
-
-AI znalosti rozvíjím v projektech z Hugging Face Agents Course a kurzu agentů Laba. Kurzové ukázky zahrnují práci s lokálními jazykovými modely, agenty používajícími nástroje, vyhledávání na Bazoši a Sbazaru přes MCP i finančního asistenta s importy dat v n8n. Zdrojové kódy přikládám v odkazech níže.
-
-Na vaší nabídce mě láká prostor převzít iniciativu, ověřovat nápady a sledovat jejich přínos v praxi. Rád bych do týmu přinesl zkušenosti s dodáváním softwaru, mezinárodní spoluprací a chuť hledat užitečná využití AI.
+V kurzech Hugging Face a Laba pracuji s AI agenty, MCP a lokálními LLM. Ukázky zahrnují vyhledávacího agenta pro Bazoš a Sbazar a finančního asistenta v n8n s PostgreSQL.
 
 Ukázky kurzových projektů:
 Hugging Face Agents Course: https://github.com/HajekMartin/agents-course-huggingface
