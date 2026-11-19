@@ -1,0 +1,7 @@
+Dear Veeam Hiring Team,
+
+At KAMAX, I develop internal business applications in C#/.NET with Microsoft SQL Server, from requirements analysis and solution design through to deployment. I independently lead selected development projects and collaborate in English with IT teams in Germany on .NET solutions and system integrations. I also manage GitLab CI/CD pipelines and deploy applications using IIS and Docker.
+
+Best regards,
+Martin Hájek
+LinkedIn: https://www.linkedin.com/in/hajek-martin/
