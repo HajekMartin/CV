@@ -170,6 +170,16 @@ Použitelná formulace pro anglické CV:
 
 Tyto znalosti samy o sobě nedokládají komerční AI projekt, konkrétní produkční nasazení, výsledky řešení ani roky praxe s AI. Při potřebě konkrétních tvrzení doplnit projekt a osobní odpovědnost od uživatele.
 
+### AI nástroje pro vývoj — přímé upřesnění 2026-11-19
+
+**Zdroj:** přímá odpověď uživatele při přípravě přihlášky na Engineering Lead: AI-Native Software Development do E.ON.
+
+- Při programování používá **Codex** a má znalost **Claude Code**. Konkrétní činnosti, četnost používání a použití v KAMAX oproti vlastním projektům zatím neupřesnil.
+- Rád zkouší jiné alternativy a platformy, výslovně zmínil **Kimi**. Neurčil konkrétní produkt, verzi, úroveň ani pracovní použití; v CV z toho neodvozovat specializaci na konkrétní platformu.
+- Zkoumá, jak Claude Code vylepšit a používat efektivněji. Jde o doložený zájem a experimentování, nikoli potvrzenou týmovou adopci, produkční agentní workflow nebo měřitelný výsledek automatizace.
+- Podrobnosti o zkoušení alternativ a efektivitě coding agentů preferuje využít spíše v průvodním či motivačním dopise. V přehledu znalostí lze stručně uvést Codex a Claude Code.
+- Doplnění nepotvrzuje zavedení AI automatizace v podnikovém vývoji, samostatnou odpovědnost za AI governance, mentoring týmů ani konkrétní pracovní AI projekt. Původní úrovně znalostí a hodnocení cloudových služeb se nemění.
+
 ### RAG — přímé upřesnění 2026-11-17
 
 **Zdroj:** přímá odpověď uživatele při přípravě CV pro Solar Turbines: „Znám principy RAG, bez vlastní implementace“.
